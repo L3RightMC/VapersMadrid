@@ -81,6 +81,7 @@ header nav{
     transform: scale(0.9);
 }
 header nav ul{
+    color: black;
     position: absolute;
     display: flex;
     align-items: center;
@@ -88,7 +89,7 @@ header nav ul{
 }
 header nav ul li a{
     display: inline-block;
-    color: rgb(169, 169, 169);
+    color: rgb(0, 0, 0);
     font-size: 20px;
     transition: transform 0.3s ease, color 0.3s ease;
 }
