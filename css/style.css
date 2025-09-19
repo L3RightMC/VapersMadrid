@@ -1,0 +1,683 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+@font-face {
+    font-family: 'Geomanist';
+    src: url(../fonts/geomanist-regular-webfont.ttf);
+}
+@font-face {
+    font-family: 'Meccanica';
+    src: url(../fonts/meccanica-regular.otf);
+}
+@font-face {
+    font-family: 'Neue';
+    src: url(../fonts/NeueMachina-Regular.otf);
+}
+@font-face {
+    font-family: 'Phage';
+    src: url(../fonts/Phage\ Regular.otf);
+}
+@font-face {
+    font-family: 'Sansburg';
+    src: url(../fonts/Sansburg.ttf);
+}
+@font-face {
+    font-family: 'JustR';
+    src: url(../fonts/JustR.otf);
+}
+@keyframes abajo-anim{
+    0%{
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(10px);
+    }
+    50%{
+        transform: translateY(0);
+    }
+    75%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes encoger {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+body{
+    background-color: white;
+    color: white;
+    font-family: 'Geomanist';
+}
+header nav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(200, 200, 200, 0.153);
+    backdrop-filter: blur(5px);
+}
+.index a{
+    color: black;
+    font-family: 'Phage';
+    transition: transform 0.3s ease, color 0.3s ease;
+    font-size: 35px;
+}
+.index a:hover{
+    transform: scale(0.9);
+}
+header nav ul{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 200px;
+}
+header nav ul li a{
+    display: inline-block;
+    color: rgb(169, 169, 169);
+    font-size: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+header nav ul li a:hover{
+    color: rgb(115, 115, 115);
+    transform: scale(0.9);
+}
+.video-fondo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    object-fit: cover;
+}
+.home-presentacion{
+    height: 90vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home-presentacion-h1{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+}
+.home-presentacion span{
+    font-size: 30px;
+    font-family: 'Phage';
+    margin-bottom: 5%;
+}
+.deslizar{
+    display: flex;
+    gap: 10px;
+}
+.deslizar span{
+    animation: abajo-anim 1.6s infinite;
+}
+.home-bang{
+    height: 120vh;
+    padding: 40px;
+    margin-bottom: 10%;
+}
+.promos{
+    animation: encoger 2s infinite;
+}
+.bang-titulo{
+    display: flex;
+    gap: 460px;
+    margin-bottom: 0.5%;
+    font-size: 15px;
+    text-align: start !important;
+}
+.bang hr{
+    border: 1px solid white;
+}
+.productos-bang{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    font-family: 'Geomanist';
+}
+.product-bang{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(95, 95, 95, 0.215);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 250px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-bang:hover{
+    transform: translateY(-10px);
+    border-radius: 10px;
+    box-shadow: 2px 4px 6px rgb(169, 169, 169);
+}
+.product-bang img {
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+}
+.product-bang p, .product-bang span{
+    margin: 5px 0;
+    font-size: 16px;
+}
+.home-razzbar{
+    height: 120vh;
+    padding: 40px;
+    margin-bottom: 10%;
+}
+.promos{
+    animation: encoger 2s infinite;
+}
+/* Ventana de productos bang */
+.ventana{
+    display: none;
+    position: absolute;
+    top: 118%;
+    width: 95%;
+    height: 620px;
+    background-color: rgb(20, 20, 20);
+    border-radius: 5px;
+    padding: 25px;
+}
+.ventana[data-ventana="6"], .ventana[data-ventana="7"], .ventana[data-ventana="8"], .ventana[data-ventana="9"],  .ventana[data-ventana="10"]{
+    top: 135%;
+}
+.ventana-fondo{
+    background-color: rgb(50, 50, 50);
+    width: 100%;
+    height: 570px;
+    border-radius: 5px;
+    padding: 30px;
+}
+.descripcion-bang{
+    position: absolute;
+    left: 45%;
+    z-index: 1;
+}
+.descripcion-bang h2{
+    font-size: 30px;
+    margin-bottom: 5%;
+}
+.descripcion-bang p{
+    font-size: 20px;
+    width: 70%;
+    margin-bottom: 5%;
+}
+.precio-s{
+    color: red;
+    animation: encoger 3s infinite;
+}
+.cant{
+    color: yellow;
+}
+.comprar-link{
+    position: absolute;
+    left: 60%;
+    top: 65%;
+    border: none;
+    z-index: 1;
+    padding: 15px 40px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 5px;
+    color: black;
+    transition: transform 0.2s ease;
+}
+.comprar-link:hover{
+    transform: scale(0.9);
+}
+.ventana-fondo img{
+    position: absolute;
+    z-index: 1;
+    width: 490px;
+    border-radius: 5px;
+}
+.cerrar-ventana{
+    position: absolute;
+    top: 0;
+    left: 95%;
+    z-index: 1;
+    background-color: rgb(255, 85, 85);
+    transition: background-color 0.2s ease;
+    padding: 3px 24px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.cerrar-ventana:hover{
+    background-color: red;
+}
+/* Ventanas de productos Razzbar */
+.ventana-1{
+    display: none;
+    position: absolute;
+    top: 260%;
+    z-index: 1;
+    width: 95%;
+    height: 650px;
+    background-color: rgb(20, 20, 20);
+    border-radius: 5px;
+    padding: 25px;
+}
+.ventana-1[data-ventana-1="6"], .ventana-1[data-ventana-1="7"], .ventana-1[data-ventana-1="8"], .ventana-1[data-ventana-1="9"]{
+    top: 280%;
+}
+.ventana-fondo-1{
+    background-color: rgb(50, 50, 50);
+    width: 100%;
+    height: 600px;
+    border-radius: 5px;
+    padding: 30px;
+}
+.descripcion-razzbar{
+    position: absolute;
+    left: 45%;
+    z-index: 1;
+}
+.descripcion-razzbar h2{
+    font-size: 30px;
+    margin-bottom: 5%;
+}
+.descripcion-razzbar p{
+    font-size: 20px;
+    width: 70%;
+    margin-bottom: 5%;
+}
+.precio-s{
+    color: red;
+    animation: encoger 3s infinite;
+}
+.cant{
+    color: yellow;
+}
+.comprar-link-1{
+    position: absolute;
+    left: 60%;
+    top: 65%;
+    border: none;
+    z-index: 1;
+    padding: 15px 40px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 5px;
+    color: black;
+    transition: transform 0.2s ease;
+}
+.comprar-link-1:hover{
+    transform: scale(0.9);
+}
+.ventana-fondo-1 img{
+    position: absolute;
+    z-index: 1;
+    width: 490px;
+    border-radius: 5px;
+}
+.razzbar-titulo{
+    display: flex;
+    gap: 450px;
+    margin-bottom: 0.5%;
+    font-size: 15px;
+}
+.razzbar hr{
+    border: 1px solid white;
+}
+.productos-razzbar{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'Geomanist';
+}
+.product-razzbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(95, 95, 95, 0.215);
+    min-height: 340px;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 250px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-razzbar:hover{
+    transform: translateY(-10px);
+    border-radius: 10px;
+    box-shadow: 2px 4px 6px rgb(169, 169, 169);
+}
+.product-razzbar img{
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+}
+.product-razzbar p, .product-razzbar span{
+    margin: 5px 0;
+}
+.home-waspe{
+    height: 180vh;
+    padding: 40px;
+}
+.promos{
+    animation: encoger 2s infinite;
+}
+.waspe-titulo{
+    display: flex;
+    gap: 450px;
+    margin-bottom: 0.5%;
+    font-size: 15px;
+}
+.waspe hr{
+    border: 1px solid white;
+}
+.productos-waspe{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'Geomanist';
+}
+.product-waspe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(95, 95, 95, 0.215);
+    min-height: 340px;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 250px;
+}
+.productos-waspe a{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.productos-waspe a:hover{
+    transform: translateY(-10px);
+    border-radius: 10px;
+    box-shadow: 2px 4px 6px rgb(169, 169, 169);
+}
+.product-waspe img {
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+}
+.product-waspe p, .product-waspe span{
+    margin: 5px 0;
+}
+.proximamente{
+    position: absolute;
+    backdrop-filter: blur(15px);
+    width: 95%;
+    height: 170vh;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.proximamente h2{
+    font-family: 'Neue';
+    font-size: 60px;
+    background-color: rgb(104, 104, 104);
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+footer{
+    height: auto;
+    backdrop-filter: blur(10px);
+}
+.esencial{
+    padding: 60px;
+    display: flex;
+    gap: 150px;
+}
+.titulo-footer h1{
+    font-family: 'Phage';
+    font-size: 50px;
+}
+.titulo-footer p{
+    font-family: 'Meccanica';
+    font-size: 25px;
+}
+.problema{
+    padding: 30px;
+    background-color: rgb(40, 40, 40);
+    border-radius: 5px;
+    width: 50%;
+    height: 100px;
+    display: flex;
+    gap: 70px;
+    align-items: center;
+}
+.problema-correo span{
+    font-size: 22px;
+}
+.copyright{
+    background-color: rgb(40, 40, 40);
+    flex: 1;
+    height: 20px;
+    align-self: flex-end;
+    text-align: center ;
+}
+.redes{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.redes a{
+    padding: 10px 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+.redes a:hover{
+    transform: scale(0.9);
+}
+.redes img{
+    width: 50px;
+    filter: invert(100%);
+}
+.logo-nav{
+    display: none;
+}
+/* --- Responsive: móvil --- */
+@media (max-width: 768px) {
+    body, html{
+        overflow-x: hidden;
+    }
+    header nav ul{
+        display: none;
+    }
+    .video-fondo{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+    }
+    .logo-nav{
+        font-family: 'Phage';
+        display: block;
+    }
+    .home-presentacion{
+        padding: 20px;
+        text-align: center;
+    }
+    .home-presentacion span{
+        margin-bottom: 30%;
+    }
+    .home-bang, .home-razzbar, .home-waspe{
+        height: 200%;
+    }
+    .productos-bang, .productos-razzbar, .productos-waspe{
+        justify-items: center;
+    }
+    .bang-titulo, .razzbar-titulo, .waspe-titulo{
+        gap: 10px;
+        text-align: center;
+    }
+    .ventana{
+        left: 0;
+        width: 100%;
+        height: 750px;
+        z-index: 2;
+    }
+    .descripcion-bang, .descripcion-razzbar{
+        width: 80%;
+        top: 48%;
+        left: 10%;
+    }
+    .comprar-link, .comprar-link-1{
+        top: 88%;
+        left: 10%;
+        padding: 15px 75px;
+    }
+    .descripcion-bang h2, .descripcion-razzbar h2{
+        font-size: 20px;
+    }
+    .descripcion-bang p, .descripcion-razzbar p{
+        font-size: 15px;
+    }
+    .ventana[data-ventana="1"]{
+        top: 100%;
+    }
+    .ventana[data-ventana="2"]{
+        top: 132%;
+    }
+    .ventana[data-ventana="3"]{
+        top: 160%;
+    }
+    .ventana[data-ventana="4"]{
+        top: 190%;
+    }
+    .ventana[data-ventana="5"]{
+        top: 240%;
+    }
+    .ventana[data-ventana="6"]{
+        top: 280%;
+    }
+    .ventana[data-ventana="7"]{
+        top: 320%;
+    }
+    .ventana-fondo, .ventana-fondo-1{
+        height: 700px;
+    }
+    .ventana img, .ventana-1 img{
+        width: 300px;
+    }
+    .cerrar-ventana{
+        left: 50%;
+        top: 1.5%;
+        transform: translate(-50%, -50%);
+    }
+    .ventana-1{
+        top: 370%;
+        left: 0;
+        width: 100%;
+        height: 750px;
+        z-index: 3;
+    }
+    .ventana-1[data-ventana-1="1"]{
+        top: 370%;
+    }
+    .ventana-1[data-ventana-1="2"]{
+        top: 410%;
+    }
+    .ventana-1[data-ventana-1="3"]{
+        top: 450%;
+    }
+    .ventana-1[data-ventana-1="4"]{
+        top: 490%;
+    }
+    .ventana-1[data-ventana-1="5"]{
+        top: 530%;
+    }
+    .ventana-1[data-ventana-1="6"]{
+        top: 570%;
+    }
+    .ventana-1[data-ventana-1="7"]{
+        top: 610%;
+    }
+    .ventana-1[data-ventana-1="8"]{
+        top: 650%;
+    }
+    .ventana-1[data-ventana-1="9"]{
+        top: 690%;
+    }
+    .proximamente{
+        height: 480%;
+        position: absolute;
+        left: 0;
+        width: 500px;
+    }
+    .proximamente h2{
+        font-size: 40px;
+        position: absolute;
+        top: 50%;
+        left: 41%;
+        transform: translate(-50%, -50%);
+    }
+    .esencial{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .titulo-footer h1{
+        font-size: 35px;
+        margin-bottom: 10%;
+        text-align: center;
+    }
+    .titulo-footer p{
+        margin-bottom: 10%;
+        text-align: center;
+    }
+    .problema{
+        width: 100%;
+        gap: 30px;
+    }
+    .problema h2{
+        font-size: 15px;
+    }
+    .problema p{
+        font-size: 10px;
+    }
+    .problema-correo span{
+        font-size: 15px;
+        width: 10px;
+    }
+}
