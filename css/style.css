@@ -709,20 +709,16 @@ footer{
     }
 
     /* Ventanas emergentes centradas y adaptables */
-    .ventana, .ventana-1, .ventana-2 {
+    .ventana, .ventana-1, .ventana-2{
         position: fixed;
-        top: 50%;
+        top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 90%;
-        max-width: 400px;
-        height: auto;
         display: none;
         justify-content: center;
         align-items: center;
         z-index: 1000;
-        background-color: rgba(32,32,32,0.95);
-        overflow-y: auto;
+        overflow-y:hidden;
         border-radius: 10px;
         padding: 20px;
         box-sizing: border-box;
@@ -730,7 +726,6 @@ footer{
     .ventana.show, .ventana-1.show, .ventana-2.show {
         display: flex;
     }
-
     /* Fondo interno de ventana */
     .ventana-fondo, .ventana-fondo-1, .ventana-fondo-2{
         width: 100%;
@@ -740,7 +735,6 @@ footer{
         border-radius: 10px;
         box-sizing: border-box;
     }
-
     /* Imágenes adaptables */
     .ventana img, .ventana-1 img, .ventana-2 img{
         width: 100%;
@@ -749,7 +743,6 @@ footer{
         display: block;
         margin: 0 auto;
     }
-
     /* Descripción adaptativa */
     .descripcion-bang, .descripcion-razzbar, .descripcion-vopk{
         width: 100%;
@@ -762,7 +755,6 @@ footer{
     .descripcion-bang p, .descripcion-razzbar p, .descripcion-vopk p{
         font-size: 15px;
     }
-
     /* Botón de cerrar */
     .cerrar-ventana{
         font-size: 20px;
