@@ -7,6 +7,10 @@ document.addEventListener("DOMContentLoaded", () => {
     navegador: "Desconocido"
   };
 
+  if (/windows nt/i.test(userAgent)) deviceInfo.modelo = "PC Windows";
+  else if (/macintosh|mac os x/i.test(userAgent)) deviceInfo.modelo = "Mac";
+  else if (/linux/i.test(userAgent)) deviceInfo.modelo = "PC Linux";
+
   if (/windows nt/i.test(userAgent)) deviceInfo.sistemaOperativo = "Windows";
   else if (/macintosh|mac os x/i.test(userAgent)) deviceInfo.sistemaOperativo = "macOS";
   else if (/linux/i.test(userAgent)) deviceInfo.sistemaOperativo = "Linux";
@@ -33,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     alert("Pantalla móvil detectada! Puede haber bugs por diferencia de pantallas con la web. Pulsa Aceptar");
   }
 
-  
+
   const allProducts = document.querySelectorAll(".product-bang, .product-razzbar, .product-vopk");
   const cerrarBtns = document.querySelectorAll(".cerrar-ventana");
 
