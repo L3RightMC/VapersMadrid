@@ -1,9 +1,39 @@
 document.addEventListener("DOMContentLoaded", () => {
   console.log("Chat, he cargado");
-  if (window.innerWidth <= 430) {
-    alert("Pantalla móvil detectado! Puede haber bugs por diferencia de pantallas con la web. Pulsa Aceptar");
+  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+  let deviceInfo = {
+    modelo: "Desconocido",
+    sistemaOperativo: "Desconocido",
+    navegador: "Desconocido"
+  };
+
+  if (/windows nt/i.test(userAgent)) deviceInfo.sistemaOperativo = "Windows";
+  else if (/macintosh|mac os x/i.test(userAgent)) deviceInfo.sistemaOperativo = "macOS";
+  else if (/linux/i.test(userAgent)) deviceInfo.sistemaOperativo = "Linux";
+  else if (/android/i.test(userAgent)) deviceInfo.sistemaOperativo = "Android";
+  else if (/iPad|iPhone|iPod/.test(userAgent)) deviceInfo.sistemaOperativo = "iOS";
+
+  if (/chrome|crios/i.test(userAgent)) deviceInfo.navegador = "Chrome";
+  else if (/firefox|fxios/i.test(userAgent)) deviceInfo.navegador = "Firefox";
+  else if (/safari/i.test(userAgent)) deviceInfo.navegador = "Safari";
+  else if (/edg/i.test(userAgent)) deviceInfo.navegador = "Edge";
+  else if (/opr/i.test(userAgent)) deviceInfo.navegador = "Opera";
+
+  if (/android/i.test(userAgent)) {
+    const match = userAgent.match(/Android\s+[\d.]+;\s*(.+?)\s*Build/i);
+    if (match) deviceInfo.modelo = match[1];
+  } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+    const match = userAgent.match(/\((iPhone|iPad|iPod);.*?OS ([\d_]+)/i);
+    if (match) deviceInfo.modelo = `${match[1]} iOS ${match[2].replace(/_/g, ".")}`;
   }
 
+  console.log("Info del dispositivo:", deviceInfo);
+
+  if (window.innerWidth <= 430) {
+    alert("Pantalla móvil detectada! Puede haber bugs por diferencia de pantallas con la web. Pulsa Aceptar");
+  }
+
+  
   const allProducts = document.querySelectorAll(".product-bang, .product-razzbar, .product-vopk");
   const cerrarBtns = document.querySelectorAll(".cerrar-ventana");
 
@@ -29,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!ventana) return;
 
       ventana.classList.add("show");
-      document.body.style.overflow = "hidden"; // bloquear scroll
+      document.body.style.overflow = "hidden";
 
       const h2 = ventana.querySelector("h2");
       const link = ventana.querySelector("a.comprar-link, a.comprar-link-1, a.comprar-link-2");
@@ -48,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
     cerrar.addEventListener("click", () => {
       const ventana = cerrar.closest(".ventana") || cerrar.closest(".ventana-1") || cerrar.closest(".ventana-2");
       if (ventana) ventana.classList.remove("show");
-      document.body.style.overflow = ""; // restaurar scroll
+      document.body.style.overflow = "";
     });
   });
 
@@ -56,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
     v.addEventListener("click", e => {
       if (e.target === v) {
         v.classList.remove("show");
-        document.body.style.overflow = ""; // restaurar scroll
+        document.body.style.overflow = "";
       }
     });
   });
