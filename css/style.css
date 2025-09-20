@@ -712,6 +712,7 @@ footer{
         position: fixed;
         top: 50%; 
         left: 50%;
+        transform: translate(-50%, -50%);
         width: 90%; 
         height: 90%;
         background: rgba(0, 0, 0, 0.845);
@@ -754,7 +755,7 @@ footer{
     .cerrar-ventana{
         font-size: 20px;
         left: 50%;
-        top: 5%;
+        top: 4%;
         transform: translate(-50%, -50%);
         padding: 5px 50px;
     }
