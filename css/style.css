@@ -710,8 +710,8 @@ footer{
     .ventana{
         display: none;
         position: fixed;
-        top: 50%; 
-        left: 50%;
+        top: 65%; 
+        left: 40%;
         transform: translate(-50%, -50%);
         width: 90%; 
         height: 90%;
@@ -761,9 +761,10 @@ footer{
     }
     .ventana-1{
         position: fixed;
-        top: 0;
-        left: 0;
-        width: 90%;
+        top: 65%; 
+        left: 40%;
+        transform: translate(-50%, -50%);
+        width: 90%; 
         height: 90%;
         display: none;
         justify-content: center;
@@ -787,9 +788,10 @@ footer{
     }
     .ventana-2{
         position: fixed;
-        top: 0;
-        left: 0;
-        width: 90%;
+        top: 65%; 
+        left: 40%;
+        transform: translate(-50%, -50%);
+        width: 90%; 
         height: 90%;
         display: none;
         justify-content: center;
