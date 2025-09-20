@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   console.log("Chat, he cargado");
+  if (window.innerWidth <= 430) {
+    alert("Pantalla móvil detectado! Puede haber bugs por diferencia de pantallas con la web. Pulsa Aceptar");
+  }
 
   const allProducts = document.querySelectorAll(".product-bang, .product-razzbar, .product-vopk");
   const cerrarBtns = document.querySelectorAll(".cerrar-ventana");

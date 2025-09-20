@@ -643,9 +643,14 @@ footer{
     display: flex;
     gap: 70px;
     align-items: center;
+    overflow: hidden;
 }
-.problema-correo span{
+.problema-correo a{
     font-size: 22px;
+    overflow: hidden;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
 }
 .copyright{
     background-color: rgb(40, 40, 40);
@@ -842,16 +847,16 @@ footer{
     }
     .agotado{
         position: absolute;
-        top: 805% !important;
+        top: 790% !important;
         height: 420%;
         z-index: 10000;
     }
     .proximamente{
-        top: 1237%;
+        top: 1225%;
         display: flex;
         flex-direction: column;
         gap: 700px;
-        height: 411%;
+        height: 555%;
         position: absolute;
         left: 0;
         width: 500px;
@@ -865,7 +870,7 @@ footer{
         padding: 10px;
     }
     .titulo-footer h1{
-        font-size: 35px;
+        font-size: 35px !important;
         margin-bottom: 10%;
         text-align: center;
     }
@@ -875,17 +880,27 @@ footer{
     }
     .problema{
         width: 100%;
-        gap: 30px;
+        gap: 15px !important;
     }
     .problema h2{
-        font-size: 15px;
+        font-size: 15px !important;
     }
     .problema p{
-        font-size: 10px;
+        font-size: 10px !important;
+
     }
-    .problema-correo span{
-        font-size: 15px;
-        width: 10px;
+    .problema-correo{
+        width: 100%;
+    }
+    .problema-correo a{
+        padding: 30px 15px !important;
+        background-color: white;
+        width: 100%;
+        color: black;
+        transition: transform 0.3s ease;
+    }
+    .problema-correo a:hover{
+        transform: translate(0.3);
     }
 }
 @media (max-width: 1024px) {
