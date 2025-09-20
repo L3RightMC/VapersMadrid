@@ -710,8 +710,8 @@ footer{
     .ventana{
         display: none;
         position: fixed;
-        top: 65%; 
-        left: 40%;
+        top: 0%; 
+        left: 0%;
         transform: translate(-50%, -50%);
         width: 90%; 
         height: 90%;
@@ -724,7 +724,11 @@ footer{
         display: flex;
     }
     .ventana-fondo{
-        width: 100%;
+        position: fixed;
+        top: 50%; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
         height: 900px;
         background-color: rgb(32, 32, 32);
     }
@@ -761,10 +765,9 @@ footer{
     }
     .ventana-1{
         position: fixed;
-        top: 65%; 
-        left: 40%;
-        transform: translate(-50%, -50%);
-        width: 90%; 
+        top: 0;
+        left: 0;
+        width: 90%;
         height: 90%;
         display: none;
         justify-content: center;
@@ -773,6 +776,10 @@ footer{
         background-color: rgb(32, 32, 32);
     }
     .ventana-fondo-1{
+        position: fixed;
+        top: 50%; 
+        left: 50%;
+        transform: translate(-50%, -50%);
         width: 90%;
         max-width: 400px;
         height: auto;
@@ -788,10 +795,9 @@ footer{
     }
     .ventana-2{
         position: fixed;
-        top: 65%; 
-        left: 40%;
-        transform: translate(-50%, -50%);
-        width: 90%; 
+        top: 0;
+        left: 0;
+        width: 90%;
         height: 90%;
         display: none;
         justify-content: center;
@@ -800,6 +806,10 @@ footer{
         background-color: rgb(32, 32, 32);
     }
     .ventana-fondo-2{
+        position: fixed;
+        top: 50%; 
+        left: 50%;
+        transform: translate(-50%, -50%);
         width: 90%;
         max-width: 400px;
         height: auto;
