@@ -4,6 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
+    overflow-x: hidden;
 }
 @font-face {
     font-family: 'Geomanist';
@@ -62,37 +63,28 @@ body{
     color: white;
     font-family: 'Geomanist';
 }
-header nav{
+header{
     width: 100%;
-    height: 80px;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px 20px;
+    z-index: 100;
+}
+.headernav{
     display: flex;
-    align-items: center;
     justify-content: center;
-    background-color: rgba(200, 200, 200, 0.153);
-    backdrop-filter: blur(5px);
-}
-.index a{
-    color: black;
-    font-family: 'Phage';
-    transition: transform 0.3s ease, color 0.3s ease;
-    font-size: 35px;
-}
-.index a:hover{
-    transform: scale(0.9);
-}
-header nav ul{
-    position: absolute;
-    display: flex;
     align-items: center;
-    gap: 200px;
 }
-header nav ul li a{
-    display: inline-block;
-    color: rgb(169, 169, 169);
-    font-size: 20px;
+.logo-nav{
+    font-family: 'Phage';
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
     transition: transform 0.3s ease, color 0.3s ease;
 }
-header nav ul li a:hover{
+.logo-nav:hover{
     color: rgb(115, 115, 115);
     transform: scale(0.9);
 }
@@ -108,19 +100,18 @@ header nav ul li a:hover{
     object-fit: cover;
 }
 .home-presentacion{
+    top: 0;
     height: 90vh;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .home-presentacion-h1{
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-size: 50px;
+    margin-bottom: 20px;
 }
 .home-presentacion span{
     font-size: 30px;
@@ -128,10 +119,14 @@ header nav ul li a:hover{
     margin-bottom: 5%;
 }
 .deslizar{
+    height: 60px;
+    overflow: hidden;
     display: flex;
     gap: 10px;
 }
 .deslizar img{
+    object-fit: contain;
+    background-repeat: no-repeat;
     width: 50px;
     filter: invert(100%);
     animation: abajo-anim 1.6s infinite;
@@ -190,43 +185,42 @@ header nav ul li a:hover{
     margin: 5px 0;
     font-size: 16px;
 }
-.home-razzbar{
-    height: 120vh;
-    padding: 40px;
-    margin-bottom: 10%;
-}
+
 .promos{
     animation: encoger 2s infinite;
 }
-/* Ventana de productos bang */
 .ventana{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: none;
-    position: absolute;
-    top: 118%;
-    width: 95%;
-    height: 620px;
-    background-color: rgb(20, 20, 20);
-    border-radius: 5px;
-    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 1000;
 }
-.ventana[data-ventana="6"], .ventana[data-ventana="7"], .ventana[data-ventana="8"], .ventana[data-ventana="9"],  .ventana[data-ventana="10"]{
-    top: 135%;
+.ventana.show{
+    display: flex;
 }
 .ventana-fondo{
-    background-color: rgb(50, 50, 50);
-    width: 100%;
-    height: 570px;
+    background-color: rgb(32, 32, 32);
+    width: 90%;
+    height: 600px;
     border-radius: 5px;
     padding: 30px;
 }
 .descripcion-bang{
     position: absolute;
+    top: 15%;
     left: 45%;
     z-index: 1;
 }
 .descripcion-bang h2{
     font-size: 30px;
     margin-bottom: 5%;
+    width: 70%;
 }
 .descripcion-bang p{
     font-size: 20px;
@@ -243,7 +237,7 @@ header nav ul li a:hover{
 .comprar-link{
     position: absolute;
     left: 60%;
-    top: 65%;
+    top: 75%;
     border: none;
     z-index: 1;
     padding: 15px 40px;
@@ -251,22 +245,24 @@ header nav ul li a:hover{
     cursor: pointer;
     border-radius: 5px;
     color: black;
-    transition: transform 0.2s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 .comprar-link:hover{
     transform: scale(0.9);
+    background-color: rgb(175, 175, 175);
 }
 .ventana-fondo img{
     position: absolute;
     z-index: 1;
     width: 490px;
+    top: 10%;
     border-radius: 5px;
 }
 .cerrar-ventana{
     position: absolute;
     top: 0;
     left: 95%;
-    z-index: 1;
+    z-index: 5;
     background-color: rgb(255, 85, 85);
     transition: background-color 0.2s ease;
     padding: 3px 24px;
@@ -277,30 +273,31 @@ header nav ul li a:hover{
 .cerrar-ventana:hover{
     background-color: red;
 }
-/* Ventanas de productos Razzbar */
 .ventana-1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: none;
-    position: absolute;
-    top: 260%;
-    z-index: 1;
-    width: 95%;
-    height: 650px;
-    background-color: rgb(20, 20, 20);
-    border-radius: 5px;
-    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 1000;
 }
-.ventana-1[data-ventana-1="6"], .ventana-1[data-ventana-1="7"], .ventana-1[data-ventana-1="8"], .ventana-1[data-ventana-1="9"]{
-    top: 280%;
+.ventana-1.show {
+    display: flex;
 }
 .ventana-fondo-1{
-    background-color: rgb(50, 50, 50);
-    width: 100%;
+    background-color: rgb(32, 32, 32);
+    width: 90%;
     height: 600px;
     border-radius: 5px;
     padding: 30px;
 }
 .descripcion-razzbar{
     position: absolute;
+    top: 20%;
     left: 45%;
     z-index: 1;
 }
@@ -323,7 +320,7 @@ header nav ul li a:hover{
 .comprar-link-1{
     position: absolute;
     left: 60%;
-    top: 65%;
+    top: 75%;
     border: none;
     z-index: 1;
     padding: 15px 40px;
@@ -332,6 +329,7 @@ header nav ul li a:hover{
     border-radius: 5px;
     color: black;
     transition: transform 0.2s ease;
+    overflow: hidden;
 }
 .comprar-link-1:hover{
     transform: scale(0.9);
@@ -341,6 +339,12 @@ header nav ul li a:hover{
     z-index: 1;
     width: 490px;
     border-radius: 5px;
+}
+.home-razzbar{
+    height: 120vh;
+    padding: 40px;
+    margin-bottom: 10%;
+    overflow: hidden;
 }
 .razzbar-titulo{
     display: flex;
@@ -517,11 +521,8 @@ footer{
     width: 50px;
     filter: invert(100%);
 }
-.logo-nav{
-    display: none;
-}
 /* --- Responsive: móvil --- */
-@media (max-width: 768px) {
+@media (max-width: 410px) {
     body, html{
         overflow-x: hidden;
     }
@@ -544,6 +545,7 @@ footer{
         animation: abajo-anim 1.6s infinite;
     }
     .home-presentacion{
+        height: 120vh;
         padding: 20px;
         text-align: center;
     }
@@ -565,19 +567,35 @@ footer{
         text-align: center;
     }
     .ventana{
-        left: 0;
+        display: none;
+        position: fixed;
+        top: 50%; 
+        left: 50%;
+        width: 100%; 
+        height: 100%;
+        background: rgba(0, 0, 0, 0.845);
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+    .ventana.show{
+        display: flex;
+    }
+    .ventana-fondo, .ventana-fondo-1{
         width: 100%;
-        height: 750px;
-        z-index: 2;
+        height: 900px;
+        background-color: rgb(32, 32, 32);
     }
     .descripcion-bang, .descripcion-razzbar{
-        width: 80%;
-        top: 48%;
-        left: 10%;
+        width: 100%;
+        text-align: center;
+        left: 65%;
+        top: 60%;
+        transform: translate(-50%, -50%);
     }
     .comprar-link, .comprar-link-1{
-        top: 88%;
-        left: 10%;
+        left: 17%;
+        top: 80%;
         padding: 15px 75px;
     }
     .descripcion-bang h2, .descripcion-razzbar h2{
@@ -586,95 +604,58 @@ footer{
     .descripcion-bang p, .descripcion-razzbar p{
         font-size: 15px;
     }
-    .ventana[data-ventana="1"]{
-        top: 100%;
-    }
-    .ventana[data-ventana="2"]{
-        top: 120%;
-    }
-    .ventana[data-ventana="3"]{
-        top: 160%;
-    }
-    .ventana[data-ventana="4"]{
-        top: 210%;
-    }
-    .ventana[data-ventana="5"]{
-        top: 240%;
-    }
-    .ventana[data-ventana="6"]{
-        top: 280%;
-    }
-    .ventana[data-ventana="7"]{
-        top: 320%;
-    }
-    .ventana[data-ventana="8"]{
-        top: 350%;
-    }
-    .ventana[data-ventana="9"]{
-        top: 385%;
-    }
-    .ventana[data-ventana="10"]{
-        top: 430%;
-    }
-    .ventana-fondo, .ventana-fondo-1{
-        height: 700px;
-    }
     .ventana img, .ventana-1 img{
         width: 300px;
-    }
-    .cerrar-ventana{
         left: 50%;
-        top: 1.5%;
+        top: 25%;
         transform: translate(-50%, -50%);
     }
+    .cerrar-ventana{
+        font-size: 20px;
+        left: 50%;
+        top: 5%;
+        transform: translate(-50%, -50%);
+        padding: 5px 50px;
+    }
     .ventana-1{
-        top: 370%;
+        position: fixed;
+        top: 0;
         left: 0;
         width: 100%;
-        height: 750px;
-        z-index: 3;
+        height: 100%;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 10000000000000000000000000;
     }
-    .ventana-1[data-ventana-1="1"]{
-        top: 480%;
+    .ventana-fondo-1{
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+        background-color: rgb(32, 32, 32);
+        padding: 20px;
+        border-radius: 10px;
     }
-    .ventana-1[data-ventana-1="2"]{
-        top: 520%;
+    .ventana-1.show{
+        display: flex;
     }
-    .ventana-1[data-ventana-1="3"]{
-        top: 580%;
-    }
-    .ventana-1[data-ventana-1="4"]{
-        top: 620%;
-    }
-    .ventana-1[data-ventana-1="5"]{
-        top: 650%;
-    }
-    .ventana-1[data-ventana-1="6"]{
-        top: 680%;
-    }
-    .ventana-1[data-ventana-1="7"]{
-        top: 720%;
-    }
-    .ventana-1[data-ventana-1="8"]{
-        top: 750%;
-    }
-    .ventana-1[data-ventana-1="9"]{
-        top: 810%;
+    .descripcion-razzbar h2{
+        width: 70%;
     }
     .proximamente{
-        height: 480%;
+        display: flex;
+        flex-direction: column;
+        gap: 1000px;
+        height: 450%;
         position: absolute;
         left: 0;
         width: 500px;
     }
     .proximamente h2{
         font-size: 40px;
-        position: absolute;
-        top: 50%;
-        left: 41%;
-        transform: translate(-50%, -50%);
     }
     .esencial{
+        gap: 10px;
         flex-direction: column;
         padding: 10px;
     }
