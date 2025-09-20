@@ -944,10 +944,13 @@ footer{
         max-width: 220px;
     }
     .agotado{
-        top: 310%;
+        top: 800% !important;
+        height: 430% !important;
     }
     .proximamente{
         left: 0;
+        top: 1240% !important;
+        height: 570% !important;
         width: 100%;
     }
     .bang-titulo, .vopk-titulo, .razzbar-titulo, .waspe-titulo{
