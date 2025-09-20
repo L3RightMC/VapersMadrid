@@ -709,10 +709,6 @@ footer{
     }
     .ventana{
         display: none;
-        position: fixed;
-        top: 0%; 
-        left: 0%;
-        transform: translate(-50%, -50%);
         width: 90%; 
         height: 90%;
         background: rgba(0, 0, 0, 0.845);
@@ -722,12 +718,10 @@ footer{
     }
     .ventana.show{
         display: flex;
+        position: fixed;
+        top: 5%;
     }
     .ventana-fondo{
-        position: fixed;
-        top: 50%; 
-        left: 50%;
-        transform: translate(-50%, -50%);
         width: 90%;
         height: 900px;
         background-color: rgb(32, 32, 32);
@@ -765,8 +759,8 @@ footer{
     }
     .ventana-1{
         position: fixed;
-        top: 0;
-        left: 0;
+        top: 5%;
+        left: 0%;
         width: 90%;
         height: 90%;
         display: none;
@@ -776,10 +770,6 @@ footer{
         background-color: rgb(32, 32, 32);
     }
     .ventana-fondo-1{
-        position: fixed;
-        top: 50%; 
-        left: 50%;
-        transform: translate(-50%, -50%);
         width: 90%;
         max-width: 400px;
         height: auto;
@@ -794,9 +784,6 @@ footer{
         width: 70%;
     }
     .ventana-2{
-        position: fixed;
-        top: 0;
-        left: 0;
         width: 90%;
         height: 90%;
         display: none;
@@ -806,10 +793,6 @@ footer{
         background-color: rgb(32, 32, 32);
     }
     .ventana-fondo-2{
-        position: fixed;
-        top: 50%; 
-        left: 50%;
-        transform: translate(-50%, -50%);
         width: 90%;
         max-width: 400px;
         height: auto;
@@ -819,6 +802,9 @@ footer{
     }
     .ventana-2.show{
         display: flex;
+        position: fixed;
+        top: 5%;
+        left: 0%;
     }
     .descripcion-vopk h2{
         width: 70%;
