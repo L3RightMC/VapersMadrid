@@ -654,6 +654,9 @@ footer{
 @media (max-width: 410px) {
     body, html{
         overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
     header nav ul{
         display: none;
@@ -688,6 +691,14 @@ footer{
     }
     .home-bang, .home-razzbar, .home-waspe, .home-vopk{
         height: 200%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(1fr));
+        gap: 15px;
+        justify-items: center;
+        width: 100%;
+        max-width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
     }
     .productos-bang, .productos-razzbar, .productos-waspe, .productos-vopk{
         justify-items: center;
