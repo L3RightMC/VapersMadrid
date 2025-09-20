@@ -185,13 +185,67 @@ header{
     margin: 5px 0;
     font-size: 16px;
 }
-
 .promos{
     animation: encoger 2s infinite;
 }
+.home-vopk{
+    height: 70vh;
+    padding: 40px;
+    margin-bottom: 10%;
+    overflow: hidden;
+}
+.promos{
+    animation: encoger 2s infinite;
+}
+.vopk-titulo{
+    display: flex;
+    gap: 460px;
+    margin-bottom: 0.5%;
+    font-size: 15px;
+    text-align: start !important;
+}
+.vopk hr{
+    border: 1px solid white;
+}
+.productos-vopk{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    font-family: 'Geomanist';
+}
+.product-vopk{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(95, 95, 95, 0.215);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 250px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-vopk:hover{
+    transform: translateY(-10px);
+    border-radius: 10px;
+    box-shadow: 2px 4px 6px rgb(169, 169, 169);
+}
+.product-vopk img{
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+}
+.product-vopk p, .product-vopk span{
+    margin: 5px 0;
+    font-size: 16px;
+}
 .ventana{
     position: fixed;
-    top: 0;
+    top: 0%;
     left: 0;
     width: 100%;
     height: 100%;
@@ -203,6 +257,9 @@ header{
 }
 .ventana.show{
     display: flex;
+    position: fixed;
+    top: 0.1%;
+    left: 0.1%;
 }
 .ventana-fondo{
     background-color: rgb(32, 32, 32);
@@ -338,6 +395,78 @@ header{
     position: absolute;
     z-index: 1;
     width: 490px;
+    border-radius: 5px;
+}
+.ventana-2{
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 1000;
+}
+.ventana-2.show{
+    display: flex;
+    position: fixed;
+    top: 0.1%;
+    left: 0.1%;
+}
+.ventana-fondo-2{
+    background-color: rgb(32, 32, 32);
+    width: 90%;
+    height: 600px;
+    border-radius: 5px;
+    padding: 30px;
+}
+.descripcion-vopk{
+    position: absolute;
+    top: 15%;
+    left: 45%;
+    z-index: 1;
+}
+.descripcion-vopk h2{
+    font-size: 30px;
+    margin-bottom: 5%;
+    width: 70%;
+}
+.descripcion-vopk p{
+    font-size: 20px;
+    width: 70%;
+    margin-bottom: 5%;
+}
+.precio-s{
+    color: red;
+    animation: encoger 3s infinite;
+}
+.cant{
+    color: yellow;
+}
+.comprar-link-1{
+    position: absolute;
+    left: 60%;
+    top: 75%;
+    border: none;
+    z-index: 1;
+    padding: 15px 40px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 5px;
+    color: black;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.comprar-link:hover{
+    transform: scale(0.9);
+    background-color: rgb(175, 175, 175);
+}
+.ventana-fondo-2 img{
+    position: absolute;
+    z-index: 1;
+    width: 490px;
+    top: 10%;
     border-radius: 5px;
 }
 .home-razzbar{
@@ -556,13 +685,13 @@ footer{
         top: 34%;
         text-align: center;
     }
-    .home-bang, .home-razzbar, .home-waspe{
+    .home-bang, .home-razzbar, .home-waspe, .home-vopk{
         height: 200%;
     }
-    .productos-bang, .productos-razzbar, .productos-waspe{
+    .productos-bang, .productos-razzbar, .productos-waspe, .productos-vopk{
         justify-items: center;
     }
-    .bang-titulo, .razzbar-titulo, .waspe-titulo{
+    .bang-titulo, .razzbar-titulo, .waspe-titulo, .vopk-titulo{
         gap: 10px;
         text-align: center;
     }
@@ -581,12 +710,12 @@ footer{
     .ventana.show{
         display: flex;
     }
-    .ventana-fondo, .ventana-fondo-1{
+    .ventana-fondo{
         width: 100%;
         height: 900px;
         background-color: rgb(32, 32, 32);
     }
-    .descripcion-bang, .descripcion-razzbar{
+    .descripcion-bang, .descripcion-razzbar, .descripcion-vopk{
         width: 100%;
         text-align: center;
         left: 65%;
@@ -598,13 +727,13 @@ footer{
         top: 80%;
         padding: 15px 75px;
     }
-    .descripcion-bang h2, .descripcion-razzbar h2{
+    .descripcion-bang h2, .descripcion-razzbar h2, .descripcion-vopk h2{
         font-size: 20px;
     }
-    .descripcion-bang p, .descripcion-razzbar p{
+    .descripcion-bang p, .descripcion-razzbar p, .descripcion-vopk p{
         font-size: 15px;
     }
-    .ventana img, .ventana-1 img{
+    .ventana img, .ventana-1 img, .ventana-2 img{
         width: 300px;
         left: 50%;
         top: 25%;
@@ -626,7 +755,8 @@ footer{
         display: none;
         justify-content: center;
         align-items: center;
-        z-index: 10000000000000000000000000;
+        z-index: 1000;
+        background-color: rgb(32, 32, 32);
     }
     .ventana-fondo-1{
         width: 90%;
@@ -640,6 +770,32 @@ footer{
         display: flex;
     }
     .descripcion-razzbar h2{
+        width: 70%;
+    }
+    .ventana-2{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        background-color: rgb(32, 32, 32);
+    }
+    .ventana-fondo-2{
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+        background-color: rgb(32, 32, 32);
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .ventana-2.show{
+        display: flex;
+    }
+    .descripcion-vopk h2{
         width: 70%;
     }
     .proximamente{

@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   console.log("Chat, he cargado");
 
-  const allProducts = document.querySelectorAll(".product-bang, .product-razzbar");
+  const allProducts = document.querySelectorAll(".product-bang, .product-razzbar, .product-vopk");
   const cerrarBtns = document.querySelectorAll(".cerrar-ventana");
 
   allProducts.forEach(btn => {
@@ -9,13 +9,18 @@ document.addEventListener("DOMContentLoaded", () => {
       let num, ventana;
 
       if (btn.classList.contains("product-bang")) {
-        num = btn.getAttribute("data-ventana")?.trim(); // Normalizamos espacios
+        num = btn.getAttribute("data-ventana")?.trim();
         ventana = document.querySelector(`.ventana[data-ventana="${num}"]`);
       } 
       else if (btn.classList.contains("product-razzbar")) {
-        num = btn.getAttribute("data-ventana-1")?.trim(); // Normalizamos espacios
+        num = btn.getAttribute("data-ventana-1")?.trim();
         ventana = document.querySelector(`.ventana-1[data-ventana-1="${num}"]`);
-        console.log("Buscando ventana (RAZZ):", num, ventana); // debug
+        console.log("Buscando ventana (RAZZ):", num, ventana);
+      }
+      else if (btn.classList.contains("product-vopk")) {
+        num = btn.getAttribute("data-ventana-2")?.trim();
+        ventana = document.querySelector(`.ventana-2[data-ventana-2="${num}"]`);
+        console.log("Buscando ventana (VOPK):", num, ventana);
       }
 
       if (!ventana) return;
@@ -24,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
       document.body.style.overflow = "hidden"; // bloquear scroll
 
       const h2 = ventana.querySelector("h2");
-      const link = ventana.querySelector("a.comprar-link, a.comprar-link-1");
+      const link = ventana.querySelector("a.comprar-link, a.comprar-link-1, a.comprar-link-2");
 
       if (h2 && link) {
         const telefono = link.getAttribute("data-tel");
@@ -38,13 +43,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   cerrarBtns.forEach(cerrar => {
     cerrar.addEventListener("click", () => {
-      const ventana = cerrar.closest(".ventana") || cerrar.closest(".ventana-1");
+      const ventana = cerrar.closest(".ventana") || cerrar.closest(".ventana-1") || cerrar.closest(".ventana-2");
       if (ventana) ventana.classList.remove("show");
       document.body.style.overflow = ""; // restaurar scroll
     });
   });
 
-  document.querySelectorAll(".ventana, .ventana-1").forEach(v => {
+  document.querySelectorAll(".ventana, .ventana-1, .ventana-2").forEach(v => {
     v.addEventListener("click", e => {
       if (e.target === v) {
         v.classList.remove("show");
@@ -53,4 +58,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-//NO FUNCIONA EL DATA-VENTANA-1 A PARTIR DEL PUTO 6
