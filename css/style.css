@@ -707,46 +707,36 @@ footer{
         gap: 10px;
         text-align: center;
     }
-
-    /* Ventanas emergentes centradas y adaptables */
-    .ventana, .ventana-1, .ventana-2{
-        position: fixed;
-        top: 55%;
-        transform: translate(-50%, -50%);
+    .ventana{
         display: none;
+        width: 90%; 
+        height: 90%;
+        background: rgba(0, 0, 0, 0.845);
         justify-content: center;
         align-items: center;
         z-index: 1000;
-        overflow-y:hidden;
-        border-radius: 10px;
-        padding: 20px;
-        box-sizing: border-box;
     }
-    .ventana.show, .ventana-1.show, .ventana-2.show {
+    .ventana.show{
         display: flex;
+        position: fixed;
+        top: 5%;
     }
-    /* Fondo interno de ventana */
-    .ventana-fondo, .ventana-fondo-1, .ventana-fondo-2{
-        width: 100%;
-        height: auto;
+    .ventana-fondo{
+        width: 90%;
+        height: 900px;
         background-color: rgb(32, 32, 32);
-        padding: 20px;
-        border-radius: 10px;
-        box-sizing: border-box;
     }
-    /* Imágenes adaptables */
-    .ventana img, .ventana-1 img, .ventana-2 img{
-        width: 100%;
-        max-width: 300px;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-    }
-    /* Descripción adaptativa */
     .descripcion-bang, .descripcion-razzbar, .descripcion-vopk{
         width: 100%;
         text-align: center;
-        margin-top: 15px;
+        left: 65%;
+        top: 60%;
+        transform: translate(-50%, -50%);
+    }
+    .comprar-link, .comprar-link-1{
+        left: 17%;
+        top: 80%;
+        padding: 15px 75px;
     }
     .descripcion-bang h2, .descripcion-razzbar h2, .descripcion-vopk h2{
         font-size: 20px;
@@ -754,7 +744,12 @@ footer{
     .descripcion-bang p, .descripcion-razzbar p, .descripcion-vopk p{
         font-size: 15px;
     }
-    /* Botón de cerrar */
+    .ventana img, .ventana-1 img, .ventana-2 img{
+        width: 300px;
+        left: 50%;
+        top: 25%;
+        transform: translate(-50%, -50%);
+    }
     .cerrar-ventana{
         font-size: 20px;
         left: 50%;
@@ -762,14 +757,58 @@ footer{
         transform: translate(-50%, -50%);
         padding: 5px 50px;
     }
-
-    /* Ajustes específicos de títulos dentro de ventanas */
-    .descripcion-razzbar h2, .descripcion-vopk h2{
-        width: 70%;
-        margin: 0 auto;
+    .ventana-1{
+        position: fixed;
+        top: 5%;
+        left: 0%;
+        width: 90%;
+        height: 90%;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        background-color: rgb(32, 32, 32);
     }
-
-    /* Otros elementos de la página */
+    .ventana-fondo-1{
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+        background-color: rgb(32, 32, 32);
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .ventana-1.show{
+        display: flex;
+    }
+    .descripcion-razzbar h2{
+        width: 70%;
+    }
+    .ventana-2{
+        width: 90%;
+        height: 90%;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        background-color: rgb(32, 32, 32);
+    }
+    .ventana-fondo-2{
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+        background-color: rgb(32, 32, 32);
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .ventana-2.show{
+        display: flex;
+        position: fixed;
+        top: 5%;
+        left: 0%;
+    }
+    .descripcion-vopk h2{
+        width: 70%;
+    }
     .proximamente{
         display: flex;
         flex-direction: column;
