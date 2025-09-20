@@ -471,23 +471,22 @@ header{
 }
 .agotado{
     position: absolute;
-    top: 350%;
     backdrop-filter: blur(10px);
-    width: 100%;
-    height: 120vh;
-    z-index: 2;
+    width: 95%;
+    min-height: 130%;
+    z-index: 10;
+    gap: 100px;
     display: flex;
-    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
 }
 .agotado p{
-    position: absolute;
     font-size: 40px;
     color: red;
     background-color: white;
     padding: 15px 25px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     border-radius: 10px;
 }
 .home-razzbar{
@@ -601,22 +600,23 @@ header{
 .proximamente{
     position: absolute;
     backdrop-filter: blur(15px);
-    width: 95%;
-    height: 170vh;
-    z-index: 1;
     display: flex;
     flex-direction: column;
-    gap: 200px;
+    width: 95%;
+    height: 160vh;
+    gap: 120px;
     align-items: center;
     justify-content: center;
+    z-index: 2;
 }
-.proximamente h2{
+.proximamente h2 {
     font-family: 'Neue';
     font-size: 60px;
     background-color: rgb(104, 104, 104);
     border-radius: 10px;
     padding: 10px 15px;
 }
+
 footer{
     height: auto;
     backdrop-filter: blur(10px);
@@ -639,18 +639,26 @@ footer{
     background-color: rgb(40, 40, 40);
     border-radius: 5px;
     width: 50%;
-    height: 100px;
     display: flex;
-    gap: 70px;
+    justify-content: space-between;
     align-items: center;
-    overflow: hidden;
+    gap: 30px;
+    min-height: 100px;
 }
 .problema-correo a{
-    font-size: 22px;
-    overflow: hidden;
-    background-color: white;
-    color: rgb(0, 0, 0);
+    display: inline-block;
+    font-size: 20px;
+    line-height: 1;
+    padding: 10px 15px;
+    text-decoration: none;
+    background: white;
     border-radius: 5px;
+    color: black;
+    transition: all 0.3s ease;
+}
+.problema-correo a:hover{
+    transform: scale(0.9);
+    background-color: rgb(150, 150, 150);
 }
 .copyright{
     background-color: rgb(40, 40, 40);
@@ -847,12 +855,10 @@ footer{
     }
     .agotado{
         position: absolute;
-        top: 790% !important;
         height: 420%;
         z-index: 10000;
     }
     .proximamente{
-        top: 1225%;
         display: flex;
         flex-direction: column;
         gap: 700px;
