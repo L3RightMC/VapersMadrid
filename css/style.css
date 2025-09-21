@@ -543,6 +543,7 @@ header{
     margin: 5px 0;
 }
 .home-waspe{
+    position: relative;
     height: 180vh;
     padding: 40px;
 }
@@ -725,10 +726,6 @@ footer{
         top: 34%;
         text-align: center;
     }
-    .agotado{
-        top: 583%;
-        height: 430vh;
-    }
     .home-bang, .home-razzbar, .home-waspe, .home-vopk{
         height: 200%;
         display: grid;
@@ -739,6 +736,27 @@ footer{
         max-width: 100%;
         padding: 0 10px;
         box-sizing: border-box;
+        overflow-y: hidden;
+    }
+    .home-waspe {
+        position: relative;
+    }
+    .proximamente {
+        position: absolute;
+        top: 1.5%;      
+        left: 0;     
+        width: 100%; 
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;     
+        gap: 500px;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 9999; 
+    }
+    .proximamente h2{
+        font-size: 30px;
     }
     .productos-bang, .productos-razzbar, .productos-waspe, .productos-vopk{
         justify-items: center;
@@ -792,7 +810,6 @@ footer{
     }
     .descripcion-bang h2, .descripcion-razzbar h2, .descripcion-vopk h2{
         font-size: 15px !important;
-        
     }
     .descripcion-bang p, .descripcion-razzbar p, .descripcion-vopk p{
         font-size: 12px !important;
@@ -853,22 +870,25 @@ footer{
         height: 900px;
         background-color: rgb(32, 32, 32);
     }
+    .home-razzbar{
+        position: relative;
+    }
     .agotado{
         position: absolute;
-        height: 420%;
+        top: 1.8%;
+        left: 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 700px;
+        background-color: rgba(0, 0, 0, 0.6);
         z-index: 10000;
     }
-    .proximamente{
-        display: flex;
-        flex-direction: column;
-        gap: 700px;
-        height: 555%;
-        position: absolute;
-        left: 0;
-        width: 500px;
-    }
-    .proximamente h2{
-        font-size: 40px;
+    .agotado p{
+        font-size: 30px;
+        z-index: 10001;
     }
     .esencial{
         gap: 10px;
@@ -950,14 +970,7 @@ footer{
         max-width: 220px;
     }
     .agotado{
-        top: 800% !important;
-        height: 430% !important;
-    }
-    .proximamente{
-        left: 0;
-        top: 1240% !important;
-        height: 570% !important;
-        width: 100%;
+        height: 1%;
     }
     .bang-titulo, .vopk-titulo, .razzbar-titulo, .waspe-titulo{
         gap: 50px;

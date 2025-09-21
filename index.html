@@ -22,12 +22,12 @@
             measurementId: "G-NS63W7MDKN"
         };
 
-            // Inicializar Firebase
+        //Iniciar la base de datos este
         const app = initializeApp(firebaseConfig);
         const analytics = getAnalytics(app);
         const db = getFirestore(app);
 
-        // Guardar info del dispositivo
+        //Me manda los datos, que cabron
         document.addEventListener("DOMContentLoaded", async () => {
             const userAgent = navigator.userAgent;
             const platform = navigator.platform;
@@ -46,7 +46,7 @@
 </script>
 </head>
 <body>
-    <video autoplay muted loop class="video-fondo"><source src="video/fondo.mp4" type="video/mp4"></video>
+    <video autoplay muted loop playsinline class="video-fondo"><source src="video/fondo.mp4" type="video/mp4"></video>
     <header>
         <nav class="headernav">
             <a class="logo-nav" href="index.html">VAPERSMADRID</a>
