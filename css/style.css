@@ -6,6 +6,9 @@
     list-style-type: none;
     overflow-x: hidden;
 }
+img, video{
+    pointer-events: none;
+}
 @font-face {
     font-family: 'Geomanist';
     src: url(../Fonts/geomanist-regular-webfont.ttf);
