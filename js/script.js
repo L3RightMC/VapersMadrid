@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   if (window.innerWidth <= 430) {
-    alert("Pantalla móvil detectada! Puede haber bugs por diferencia de pantallas con la web. Pulsa Aceptar");
+    alert("Pantalla móvil detectada! La web puede tener bugs dependiendo de navegador. Se recomienda usar Chrome o Firefox. Pulsa Aceptar");
   }
 
 
