@@ -1,4 +1,4 @@
-🚬 VapersMadrid
+🚬 VapersMadrid 🚬
 
 Página web para la venta y presentación de vapers desechables
 Diseñada con HTML, CSS y JavaScript, optimizada para PC y móviles 📱💻
@@ -19,7 +19,9 @@ Diseñada con HTML, CSS y JavaScript, optimizada para PC y móviles 📱💻
 - 🔒 Integración con Firebase para guardar información  
 
 🔄️ Actualizaciones  
+  
 Actualizo la web constantemente para agregar cosas, eliminar, solucionar bugs, mejorar...  
+  
 Versión 1.0: Creación de la web  
 Versión 1.0.1: Responsive - Móviles  
 Versión 1.0.2: Responsive - Tablets  
