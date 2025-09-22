@@ -294,7 +294,7 @@ header{
 .cant{
     color: yellow;
 }
-.comprar-link{
+.elegir-contacto, .elegir-contacto-1{
     position: absolute;
     left: 60%;
     top: 75%;
@@ -307,10 +307,88 @@ header{
     color: black;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
-.comprar-link:hover{
+.elegir-contacto:hover, .elegir-contacto-1:hover{
     transform: scale(0.9);
     background-color: rgb(175, 175, 175);
 }
+.contacto-elegir{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(32, 32, 32);
+    width: 90%;
+    max-width: 400px; 
+    padding: 20px;
+    border-radius: 12px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000001;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+.cerrar-ventana-con{
+    position: absolute;
+    top: 0;
+    left: 90%;
+    z-index: 5;
+    background-color: rgb(255, 85, 85);
+    transition: background-color 0.2s ease;
+    padding: 3px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.cerrar-ventana-con:hover{
+    background-color: red;
+}
+.contacto-elegir.show {
+    display: flex;
+}
+.contacto-elegir h2{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: white;
+}
+.contacto-multi {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
+}
+.comprar-whatsapp, .comprar-instagram{
+    width: 80%;
+    max-width: 250px;
+    padding: 12px 0;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: transform 0.2s ease;
+}
+.comprar-instagram img, .comprar-whatsapp img{
+    width: 30px;
+}
+.comprar-whatsapp{
+    background-color: rgb(91, 255, 79);
+    color: white;
+}
+.comprar-instagram{
+    background-color: rgb(255, 85, 204);
+    color: white;
+}
+.comprar-whatsapp:hover, .comprar-instagram:hover{
+    transform: scale(1.05);
+}
+
 .ventana-fondo img{
     position: absolute;
     z-index: 1;
@@ -377,23 +455,6 @@ header{
 .cant{
     color: yellow;
 }
-.comprar-link-1{
-    position: absolute;
-    left: 60%;
-    top: 75%;
-    border: none;
-    z-index: 1;
-    padding: 15px 40px;
-    background-color: rgb(255, 255, 255);
-    cursor: pointer;
-    border-radius: 5px;
-    color: black;
-    transition: transform 0.2s ease;
-    overflow: hidden;
-}
-.comprar-link-1:hover{
-    transform: scale(0.9);
-}
 .ventana-fondo-1 img{
     position: absolute;
     z-index: 1;
@@ -447,23 +508,6 @@ header{
 }
 .cant{
     color: yellow;
-}
-.comprar-link-1{
-    position: absolute;
-    left: 60%;
-    top: 75%;
-    border: none;
-    z-index: 1;
-    padding: 15px 40px;
-    background-color: rgb(255, 255, 255);
-    cursor: pointer;
-    border-radius: 5px;
-    color: black;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-.comprar-link:hover{
-    transform: scale(0.9);
-    background-color: rgb(175, 175, 175);
 }
 .ventana-fondo-2 img{
     position: absolute;
@@ -796,20 +840,16 @@ footer{
         top: 67% !important;
         transform: translate(-50%, -50%);
     }
-    .comprar-link, .comprar-link-1{
+    .elegir-contacto{
         position: absolute;
-        left: 14% !important;
-        top: 80%;
-        padding: 12px 40px;
-        z-index: 9999;
-        font-size: 16px;
+        left: 10% !important;
+        width: 80%;
     }
-    .comprar-link-1{
+    .elegir-contacto-1{
         position: absolute;
-        left: 1%;
-        top: 10%;
-        padding: 15px 15px;
-        z-index: 9999;
+        left: 10% !important;
+        width: 80%;
+        border-radius: 5px;
     }
     .descripcion-bang h2, .descripcion-razzbar h2, .descripcion-vopk h2{
         font-size: 15px !important;
@@ -1000,10 +1040,10 @@ footer{
         text-align: center;
         width: 90%;
     }
-    .comprar-link, .comprar-link-1{
+    .elegir-contacto, .elegir-contacto-1{
         left: 35%;
         top: 85%;
-        padding: 12px 40px;
+        padding: 12px 60px;
     }
     .cerrar-ventana{
         left: 90%;
