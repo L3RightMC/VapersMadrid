@@ -35,11 +35,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //Puto iPhone de mierda, como se pasa las cosas por el culo
   const video = document.querySelector(".video-fondo");
-  document.addEventListener("DOMContentLoaded", () => {
-    video.play().catch(() => {
-      document.addEventListener("touchstart", () => video.play(), { once: true });
-      document.addEventListener("click", () => video.play(), { once: true });
-    });
+  video.play().catch(() => {
+    document.addEventListener("touchstart", () => video.play(), { once: true });
+    document.addEventListener("click", () => video.play(), { once: true });
   });
 
   if (window.innerWidth <= 430) {
