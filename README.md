@@ -31,5 +31,6 @@ Versión 2.0: Agregar la marca Vopk
 Versión 2.0.1: Vincular a mi base de datos  
 Versión 2.0.2: Mejorar responsive para tablets  
 Versión 2.0.3: Mejor adaptación para dispositivos Apple (iPhone, iPad, iMac...)  
+Versión: PRE3.0: Agregar opciones de contacto (WhatsApp o Instagram) NOTA: Depende de navegador, deja o no contactar por IG
   
 Gracias por utilizar mi web!!  
