@@ -46,39 +46,50 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // --- VENTANAS DE PRODUCTO ---
-  const allProducts = document.querySelectorAll(".product-bang, .product-razzbar, .product-vopk");
+  const allProducts = document.querySelectorAll(".product-bang, .product-razzbar, .product-vopk, .product-waspe");
   const cerrarBtns = document.querySelectorAll(".cerrar-ventana, .cerrar-ventana-con");
 
   allProducts.forEach(btn => {
-    btn.addEventListener("click", () => {
-      let num, ventana;
+  btn.addEventListener("click", () => {
+    let num, ventana;
 
-      if (btn.classList.contains("product-bang")) {
-        num = btn.getAttribute("data-ventana")?.trim();
-        ventana = document.querySelector(`.ventana[data-ventana="${num}"]`);
-      } 
-      else if (btn.classList.contains("product-razzbar")) {
-        num = btn.getAttribute("data-ventana-1")?.trim();
-        ventana = document.querySelector(`.ventana-1[data-ventana-1="${num}"]`);
-        console.log("Buscando ventana (RAZZ):", num, ventana);
-      }
-      else if (btn.classList.contains("product-vopk")) {
-        num = btn.getAttribute("data-ventana-2")?.trim();
-        ventana = document.querySelector(`.ventana-2[data-ventana-2="${num}"]`);
-        console.log("Buscando ventana (VOPK):", num, ventana);
-      }
+    if (btn.classList.contains("product-bang")) {
+      num = btn.getAttribute("data-ventana")?.trim();
+      ventana = document.querySelector(`.ventana[data-ventana="${num}"]`);
+      console.log("clicked (BANG) num:", num, "ventana:", ventana);
+    } 
+    else if (btn.classList.contains("product-razzbar")) {
+      num = btn.getAttribute("data-ventana-1")?.trim();
+      ventana = document.querySelector(`.ventana-1[data-ventana-1="${num}"]`);
+      console.log("clicked (RAZZ) num:", num, "ventana:", ventana);
+    }
+    else if (btn.classList.contains("product-vopk")) {
+      num = btn.getAttribute("data-ventana-2")?.trim();
+      ventana = document.querySelector(`.ventana-2[data-ventana-2="${num}"]`);
+      console.log("clicked (VOPK) num:", num, "ventana:", ventana);
+    }
+    else if (btn.classList.contains("product-waspe")) {
+      num = btn.getAttribute("data-ventana-3")?.trim();
+      ventana = document.querySelector(`.ventana-3[data-ventana-3="${num}"]`);
+      console.log("clicked (WASPE) num:", num, "ventana:", ventana);
+    } else {
+      console.log("clicked (UNKNOWN product) element:", btn);
+    }
 
-      if (!ventana) return;
+    if (!ventana) {
+      console.warn("No se encontró la ventana para:", num);
+      return;
+    }
 
-      ventana.classList.add("show");
-      document.body.style.overflow = "hidden";
-    });
+    ventana.classList.add("show");
+    document.body.style.overflow = "hidden";
   });
+});
 
   // --- VENTANA DE CONTACTO ---
   document.querySelectorAll(".elegir-contacto, .elegir-contacto-1").forEach(btn => {
     btn.addEventListener("click", () => {
-      const ventana = btn.closest(".ventana, .ventana-1, .ventana-2");
+      const ventana = btn.closest(".ventana, .ventana-1, .ventana-2, .ventana-3");
       if (!ventana) return;
 
       const contactoVentana = document.querySelector(".contacto-elegir, .contacto-elegir-1");
@@ -96,43 +107,45 @@ document.addEventListener("DOMContentLoaded", () => {
           window.open(`https://wa.me/${telefono}?text=${texto}`, "_blank");
         };
       }
-
       // Instagram
       const btnIG = contactoVentana.querySelector(".comprar-instagram");
       if (h2 && btnIG) {
+        // Reemplazamos el botón para eliminar posibles listeners anteriores
         btnIG.replaceWith(btnIG.cloneNode(true));
         const newBtnIG = contactoVentana.querySelector(".comprar-instagram");
+
         newBtnIG.addEventListener("click", () => {
-          const texto = `Hola! Me interesa el producto "${h2.textContent.trim()}".`;
-    
-          if (navigator.clipboard && navigator.clipboard.writeText) {
-            navigator.clipboard.writeText(texto).then(() => {
-              window.open("https://www.instagram.com/vapersmadridd___/", "_blank");
-              alert("Texto copiado al portapapeles. Pégalo en Instagram.");
-            }).catch(() => {
-              window.open("https://www.instagram.com/vapersmadridd___/", "_blank");
-              alert("No se pudo copiar al portapapeles, pero puedes pegar el mensaje en Instagram.");
-            });
-          } else {
-           window.open("https://www.instagram.com/vapersmadridd___/", "_blank");
-            alert("Tu navegador no soporta copiar al portapapeles. Pega el mensaje manualmente en Instagram.");
+          const texto = `Hola! Me interesa el producto "${h2.textContent.trim()}". Está disponible?`;
+
+          let alertMsg = "Texto copiado al portapapeles. Pégalo en Instagram.";
+          if (!(navigator.clipboard && navigator.clipboard.writeText)) {
+          alertMsg = "Tu navegador no soporta copiar al portapapeles. Pega el mensaje manualmente en Instagram.";
           }
+
+          alert(alertMsg);
+
+          // Esperar 5 segundos antes de redirigir
+          setTimeout(() => {
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(texto).catch(() => {});
+            }
+            window.open("https://www.instagram.com/vapersmadridd___/", "_blank");
+          }, 5000);
         });
       }
     });
   });
-
   // --- CERRAR VENTANAS ---
   cerrarBtns.forEach(cerrar => {
     cerrar.addEventListener("click", () => {
-      const ventana = cerrar.closest(".ventana") || cerrar.closest(".ventana-1") || cerrar.closest(".ventana-2") || cerrar.closest(".contacto-elegir");
+      const ventana = cerrar.closest(".ventana") || cerrar.closest(".ventana-1") || cerrar.closest(".ventana-2") || cerrar.closest(".ventana-3") || cerrar.closest(".contacto-elegir");
       if (ventana) ventana.classList.remove("show");
       document.body.style.overflow = "";
     });
   });
 
   // Click fuera para cerrar ventana
-  document.querySelectorAll(".ventana, .ventana-1, .ventana-2").forEach(v => {
+  document.querySelectorAll(".ventana, .ventana-1, .ventana-2, .ventana-3").forEach(v => {
     v.addEventListener("click", e => {
       if (e.target === v) {
         v.classList.remove("show");

@@ -294,7 +294,7 @@ header{
 .cant{
     color: yellow;
 }
-.elegir-contacto, .elegir-contacto-1{
+.elegir-contacto{
     position: absolute;
     left: 60%;
     top: 75%;
@@ -520,7 +520,7 @@ header{
     position: absolute;
     backdrop-filter: blur(10px);
     width: 95%;
-    min-height: 130%;
+    min-height: 120%;
     z-index: 10;
     gap: 100px;
     display: flex;
@@ -590,9 +590,9 @@ header{
     margin: 5px 0;
 }
 .home-waspe{
-    position: relative;
-    height: 180vh;
+    height: 120vh;
     padding: 40px;
+    margin-bottom: 10%;
 }
 .promos{
     animation: encoger 2s infinite;
@@ -610,8 +610,6 @@ header{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
     padding: 20px;
     font-family: 'Geomanist';
 }
@@ -621,23 +619,21 @@ header{
     align-items: center;
     text-align: center;
     background-color: rgba(95, 95, 95, 0.215);
-    min-height: 340px;
     backdrop-filter: blur(5px);
     border-radius: 10px;
     color: white;
     padding: 15px;
     box-sizing: border-box;
     width: 250px;
-}
-.productos-waspe a{
+    cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.productos-waspe a:hover{
+.productos-waspe button:hover{
     transform: translateY(-10px);
     border-radius: 10px;
     box-shadow: 2px 4px 6px rgb(169, 169, 169);
 }
-.product-waspe img {
+.product-waspe img{
     width: 100%;
     border-radius: 10px;
     height: auto;
@@ -645,26 +641,56 @@ header{
 .product-waspe p, .product-waspe span{
     margin: 5px 0;
 }
-.proximamente{
+.ventana-3{
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 1000;
+}
+.ventana-3.show{
+    display: flex;
+    position: fixed;
+    top: 0.1%;
+    left: 0.1%;
+}
+.ventana-fondo-3{
+    background-color: rgb(32, 32, 32);
+    width: 90%;
+    height: 600px;
+    border-radius: 5px;
+    padding: 30px;
+}
+.descripcion-waspe{
     position: absolute;
-    backdrop-filter: blur(15px);
+    top: 15%;
+    left: 45%;
+    z-index: 1;
     display: flex;
     flex-direction: column;
-    width: 95%;
-    height: 160vh;
-    gap: 120px;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
+    gap: 30px;
 }
-.proximamente h2 {
-    font-family: 'Neue';
-    font-size: 60px;
-    background-color: rgb(104, 104, 104);
-    border-radius: 10px;
-    padding: 10px 15px;
+.descripcion-waspe h2{
+    font-size: 30px;
+    margin-bottom: 5%;
+    width: 70%;
 }
-
+.descripcion-waspe p{
+    font-size: 20px;
+    width: 70%;
+}
+.ventana-fondo-3 img{
+    position: absolute;
+    z-index: 1;
+    width: 490px;
+    top: 10%;
+    border-radius: 5px;
+}
 footer{
     height: auto;
     backdrop-filter: blur(10px);
@@ -788,23 +814,6 @@ footer{
     .home-waspe {
         position: relative;
     }
-    .proximamente {
-        position: absolute;
-        top: 1.5%;      
-        left: 0;     
-        width: 100%; 
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center; 
-        align-items: center;     
-        gap: 500px;
-        background: rgba(0, 0, 0, 0.6);
-        z-index: 9999; 
-    }
-    .proximamente h2{
-        font-size: 30px;
-    }
     .productos-bang, .productos-razzbar, .productos-waspe, .productos-vopk{
         justify-items: center;
     }
@@ -851,13 +860,13 @@ footer{
         width: 80%;
         border-radius: 5px;
     }
-    .descripcion-bang h2, .descripcion-razzbar h2, .descripcion-vopk h2{
+    .descripcion-bang h2, .descripcion-razzbar h2, .descripcion-vopk h2, .descripcion-waspe h2{
         font-size: 15px !important;
     }
-    .descripcion-bang p, .descripcion-razzbar p, .descripcion-vopk p{
+    .descripcion-bang p, .descripcion-razzbar p, .descripcion-vopk p, .descripcion-waspe p{
         font-size: 12px !important;
     }
-    .ventana img, .ventana-1 img, .ventana-2 img{
+    .ventana img, .ventana-1 img, .ventana-2 img, .ventana-3 img{
         position: absolute;
         width: 250px !important;
         left: 50%;
@@ -912,6 +921,35 @@ footer{
         width: 90%;
         height: 900px;
         background-color: rgb(32, 32, 32);
+    }
+    .ventana-3{
+        display: none;
+        width: 100%; 
+        height: 90%;
+        background: rgba(0, 0, 0, 0.845);
+        justify-content: center;
+        align-items: center;
+        z-index: 10000;
+    }
+    .ventana-3.show{
+        display: flex;
+        overflow-y: hidden;
+        position: fixed;
+        top: 5%;
+    }
+    .ventana-fondo-3{
+        width: 90%;
+        height: 900px;
+        background-color: rgb(32, 32, 32);
+    }
+    .descripcion-waspe{
+        width: 100% !important;
+        text-align: center;
+        position: absolute !important;
+        left: 63.5% !important;
+        top: 64% !important;
+        transform: translate(-50%, -50%);
+        gap: 15px;
     }
     .home-razzbar{
         position: relative;
@@ -1013,19 +1051,19 @@ footer{
         max-width: 220px;
     }
     .agotado{
-        height: 1%;
+        
     }
     .bang-titulo, .vopk-titulo, .razzbar-titulo, .waspe-titulo{
         gap: 50px;
         font-size: 14px;
         justify-content: center;
     }
-    .ventana-fondo, .ventana-fondo-1, .ventana-fondo-2{
+    .ventana-fondo, .ventana-fondo-1, .ventana-fondo-2, .ventana-fondo-3{
         width: 95%;
         height: 1100px;
         padding: 20px;
     }
-    .ventana-fondo img, .ventana-fondo-1 img, .ventana-fondo-2 img{
+    .ventana-fondo img, .ventana-fondo-1 img, .ventana-fondo-2 img, .ventana-fondo-3 img{
         width: 350px;
         max-width: 100%;
         height: auto;
@@ -1033,7 +1071,7 @@ footer{
         left: 50%;
         transform: translate(-50%, -50%);
     }
-    .descripcion-bang, .descripcion-razzbar, .descripcion-vopk{
+    .descripcion-bang, .descripcion-razzbar, .descripcion-vopk, .descripcion-waspe{
         left: 65%;
         top: 65%;
         transform: translate(-50%, -50%);
