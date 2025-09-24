@@ -818,7 +818,11 @@ footer{
         justify-items: center;
     }
     .bang-titulo, .razzbar-titulo, .waspe-titulo, .vopk-titulo{
-        gap: 10px;
+        gap: 1px;
+        text-align: center;
+    }
+    .promos{
+        font-size: 15px;
         text-align: center;
     }
     .ventana{
@@ -1010,7 +1014,7 @@ footer{
         transform: translate(0.3);
     }
 }
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     body, html {
         overflow-x: hidden;
         font-size: 16px;
@@ -1049,9 +1053,6 @@ footer{
     .product-bang, .product-vopk, .product-razzbar, .product-waspe{
         width: 100%;
         max-width: 220px;
-    }
-    .agotado{
-        
     }
     .bang-titulo, .vopk-titulo, .razzbar-titulo, .waspe-titulo{
         gap: 50px;
@@ -1110,5 +1111,90 @@ footer{
     }
     .problema-correo span{
         font-size: 18px;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+    .bang-titulo, .vopk-titulo, .razzbar-titulo, .waspe-titulo{
+        gap: 200px;
+    }
+    .agotado{
+        height: 160vh;
+    }
+    .home-razzbar{
+        height: 160vh;
+    }
+    .home-bang{
+        height: 140vh;
+    }
+    .home-waspe{
+        height: 110vh;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    .bang-titulo, .vopk-titulo, .razzbar-titulo, .waspe-titulo{
+        gap: 100px;
+    }
+    .agotado{
+        height: 120vh;
+    }
+    .home-vopk{
+        height: 80vh;
+    }
+    .home-razzbar{
+        height: 120vh;
+    }
+    .home-bang{
+        height: 140vh;
+    }
+    .home-waspe{
+        height: 110vh;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1400px) and (orientation: landscape){
+    .bang-titulo, .vopk-titulo, .waspe-titulo{
+        gap: 330px;
+    }
+    .promos{
+        font-size: 20px;
+    }
+    .razzbar-titulo{
+        gap: 320px;
+    }
+    .home-vopk{
+        height: 50vh;
+    }
+    .home-razzbar{
+        height: 120vh;
+    }
+    .home-bang{
+        height: 80vh;
+    }
+    .home-waspe{
+        height: 80vh;
+        overflow: hidden;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1400px) and (orientation: portrait){
+    .bang-titulo, .vopk-titulo, .waspe-titulo{
+        gap: 150px;
+    }
+    .promos{
+        font-size: 20px;
+    }
+    .razzbar-titulo{
+        gap: 150px;
+    }
+    .home-vopk{
+        height: 40vh;
+    }
+    .home-razzbar{
+        height: 120vh;
+    }
+    .home-bang{
+        height: 80vh;
+    }
+    .home-waspe{
+        height: 60vh;
+        overflow: hidden;
     }
 }
