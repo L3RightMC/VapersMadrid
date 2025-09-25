@@ -33,6 +33,7 @@ Versión 2.0.2: Mejorar responsive para tablets
 Versión 2.0.3: Mejor adaptación para dispositivos Apple (iPhone, iPad, iMac...)  
 Versión: PRE3.0: Agregar opciones de contacto (WhatsApp o Instagram) NOTA: Depende de navegador, deja o no contactar por IG  
 Versión 3.0: Agregar la marca Waspe  
-Versión 3.0.1: Responsive - Mejora para tablets pequeños y grandes (horizontal y vertical)
+Versión 3.0.1: Responsive - Mejora para tablets pequeños y grandes (horizontal y vertical)  
+Versión: 3.0.2: Agotado en algunos productos "Bang"
   
 Gracias por utilizar mi web!!  
