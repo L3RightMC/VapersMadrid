@@ -134,8 +134,17 @@ header{
     filter: invert(100%);
     animation: abajo-anim 1.6s infinite;
 }
+.cant-g{
+    color: green;
+}
+.cant-m{
+    color: yellow;
+}
+.cant-b{
+    color: red;
+}
 .home-bang{
-    height: 100vh;
+    height: 110vh;
     padding: 40px;
     margin-bottom: 10%;
     overflow-y: hidden;
@@ -877,11 +886,13 @@ footer{
     .elegir-contacto{
         position: absolute;
         left: 10% !important;
+        top: 85% !important;
         width: 80%;
     }
     .elegir-contacto-1{
         position: absolute;
         left: 10% !important;
+        top: 85% !important;
         width: 80%;
         border-radius: 5px;
     }
