@@ -965,7 +965,7 @@ footer{
         background: rgba(0, 0, 0, 0.845);
         justify-content: center;
         align-items: center;
-        z-index: 10000;
+        z-index: 100001;
     }
     .ventana-3.show{
         display: flex;
@@ -1030,7 +1030,6 @@ footer{
     }
     .problema p{
         font-size: 10px !important;
-
     }
     .problema-correo{
         width: 100%;
