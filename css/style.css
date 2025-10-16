@@ -174,7 +174,36 @@ header{
     width: 250px;
     z-index: 100;
 }
-.agotado-bang::after {
+.agotado-razzbar {
+  position: relative;
+  width: 250px;
+  display: flex; /* mantiene el flujo dentro del padre flex */
+  justify-content: center;
+  align-items: center;
+}
+.agotado-razzbar button {
+  pointer-events: none;
+  cursor: not-allowed;
+  opacity: 0.7; /* opcional, para que se note visualmente */
+}
+.agotado-razzbar::after {
+  content: "AGOTADO";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  color: rgb(255, 0, 0);
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  pointer-events: none;
+}
+.agotado-bang::after{
     content: "AGOTADO";
     position: absolute;
     top: 0;
@@ -1030,6 +1059,7 @@ footer{
     }
     .problema p{
         font-size: 10px !important;
+
     }
     .problema-correo{
         width: 100%;
