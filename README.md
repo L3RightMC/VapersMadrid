@@ -36,6 +36,7 @@ Versión 3.0: Agregar la marca Waspe
 Versión 3.1: Responsive - Mejora para tablets pequeños y grandes (horizontal y vertical)  
 Versión 3.2: Agotado en algunos productos "Bang"  
 Versión 3.3: Cantidades de productos "Waspe"  
-Versión 4.0: Agregar la marca "Razzbar" y agotado los "Waspe"
+Versión 4.0: Agregar la marca "Razzbar" y agotado los "Waspe"  
+Versión: 4.1: Agotado en algunos productos "Razzbar"
   
 Gracias por utilizar mi web!!  
