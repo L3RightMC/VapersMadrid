@@ -37,8 +37,8 @@ Versión 3.1: Responsive - Mejora para tablets pequeños y grandes (horizontal y
 Versión 3.2: Agotado en algunos productos "Bang"  
 Versión 3.3: Cantidades de productos "Waspe"  
 Versión 4.0: Agregar la marca "Razzbar" y agotado los "Waspe"  
-Versión: 4.1: Agotado en algunos productos "Razzbar"
-Versión: 4.2: Agotado y cantidades en algunos productos "Razzbar", Agotado todo "Bang" y mejor organización en CSS
-Versión: 4.3: Mejor adaptación a dispositivos móviles/tablets
+Versión: 4.1: Agotado en algunos productos "Razzbar"  
+Versión: 4.2: Agotado y cantidades en algunos productos "Razzbar", Agotado todo "Bang" y mejor organización en CSS  
+Versión: 4.3: Mejor adaptación a dispositivos móviles/tablets  
   
 Gracias por utilizar mi web!!  
