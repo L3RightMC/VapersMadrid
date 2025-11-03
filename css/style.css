@@ -168,7 +168,7 @@ header{
     backdrop-filter: blur(10px);
     width: 95%;
     min-height: 120%;
-    z-index: 10000;
+    z-index: 1000;
     gap: 100px;
     display: flex;
     flex-direction: column;
@@ -211,6 +211,7 @@ header{
     justify-content: center;
     z-index: 2;
     pointer-events: none;
+    box-sizing: border-box;
 }
 /* Productos Agotados */
 /* ------------------------------------------------- */
@@ -342,6 +343,7 @@ header{
     padding: 40px;
     margin-bottom: 10%;
     overflow-y: hidden;
+    position: relative;
 }
 .bang-titulo{
     display: flex;
@@ -446,6 +448,7 @@ header{
     padding: 40px;
     margin-bottom: 10%;
     overflow: hidden;
+    position: relative;
 }
 .razzbar-titulo{
     display: flex;
@@ -652,6 +655,7 @@ header{
     height: 120vh;
     padding: 40px;
     margin-bottom: 10%;
+    position: relative;
 }
 .promos{
     animation: encoger 2s infinite;
@@ -828,278 +832,6 @@ footer{
     filter: invert(100%);
 }
 /* FOOTER */
-/* ------------------------------------------------- */
-
-/* ------------------------------------------------- */
-/* Responsive: Móvil */
-@media (max-width: 430px) {
-    /* Raíz */
-    body, html{
-        overflow-x: hidden;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    .promos{
-        font-size: 15px;
-        text-align: center;
-    }
-    /* Raíz */
-    /* Navegación */
-    header nav ul{
-        display: none;
-    }
-    .video-fondo{
-        position: fixed;
-        width: 100%;
-        height: 100%;
-    }
-    .logo-nav{
-        font-family: 'Phage';
-        display: block;
-    }
-    .deslizar img{
-        width: 35px;
-        height: 35px;
-        filter: invert(100%);
-        animation: abajo-anim 1.6s infinite;
-    }
-    /* Navegación */
-    /* Presentación */
-    .home-presentacion{
-        margin-top: -40%;
-        height: 120vh;
-        padding: 20px;
-        text-align: center;
-    }
-    .home-presentacion span{
-        margin-bottom: 30%;
-    }
-    .home-presentacion-h1{
-        top: 34%;
-        text-align: center;
-    }
-    /* Presentación */
-    /* Marcas */
-    .home-bang, .home-razzbar, .home-waspe, .home-vopk{
-        height: 200%;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(1fr));
-        gap: 15px;
-        justify-items: center;
-        width: 100%;
-        max-width: 100%;
-        padding: 0 10px;
-        box-sizing: border-box;
-        overflow-y: hidden;
-    }
-    .home-waspe, .home-razzbar{
-        position: relative;
-    }
-    /* Marcas */
-    /* Productos */
-    .productos-bang, .productos-razzbar, .productos-waspe, .productos-vopk{
-        justify-items: center;
-    }
-    .bang-titulo, .razzbar-titulo, .waspe-titulo, .vopk-titulo{
-        gap: 1px;
-        text-align: center;
-    }
-    /* Productos */
-    /* Ventanas */
-    .ventana{
-        display: none;
-        width: 100%; 
-        height: 90%;
-        background: rgba(0, 0, 0, 0.845);
-        justify-content: center;
-        align-items: center;
-        z-index: 1000;
-    }
-    .ventana.show{
-        display: flex;
-        overflow-y: hidden;
-        position: fixed;
-        top: 5%;
-    }
-    .ventana-fondo{
-        width: 90%;
-        height: 900px;
-        background-color: rgb(32, 32, 32);
-    }
-    .descripcion-bang, .descripcion-razzbar, .descripcion-vopk{
-        width: 100% !important;
-        text-align: center;
-        position: absolute !important;
-        left: 63.5% !important;
-        top: 67% !important;
-        transform: translate(-50%, -50%);
-    }
-    .elegir-contacto{
-        position: absolute;
-        left: 10% !important;
-        top: 85% !important;
-        width: 80%;
-    }
-    .elegir-contacto-1{
-        position: absolute;
-        left: 10% !important;
-        top: 85% !important;
-        width: 80%;
-        border-radius: 5px;
-    }
-    .descripcion-bang h2, .descripcion-razzbar h2, .descripcion-vopk h2, .descripcion-waspe h2{
-        font-size: 15px !important;
-    }
-    .descripcion-bang p, .descripcion-razzbar p, .descripcion-vopk p, .descripcion-waspe p{
-        font-size: 12px !important;
-    }
-    .ventana img, .ventana-1 img, .ventana-2 img, .ventana-3 img{
-        position: absolute;
-        width: 250px !important;
-        left: 50%;
-        top: 25%;
-        transform: translate(-50%, -50%);
-    }
-    .cerrar-ventana{
-        font-size: 20px;
-        left: 75% !important;
-        top: 0% !important;
-        padding: 5px 30px;
-    }
-    .ventana-1{
-        display: none;
-        width: 100%; 
-        height: 90%;
-        background: rgba(0, 0, 0, 0.845);
-        justify-content: center;
-        align-items: center;
-        z-index: 1000;
-    }
-    .ventana-1.show{
-        display: flex;
-        overflow-y: hidden;
-        position: fixed;
-        top: 5%;
-    }
-    .ventana-fondo-1{
-        width: 90%;
-        height: 900px;
-        background-color: rgb(32, 32, 32);
-    }
-    .descripcion-razzbar h2{
-        width: 70%;
-    }
-    .ventana-2{
-        display: none;
-        width: 100%; 
-        height: 90%;
-        background: rgba(0, 0, 0, 0.845);
-        justify-content: center;
-        align-items: center;
-        z-index: 1000;
-    }
-    .ventana-2.show{
-        display: flex;
-        overflow-y: hidden;
-        position: fixed;
-        top: 5%;
-    }
-    .ventana-fondo-2{
-        width: 90%;
-        height: 900px;
-        background-color: rgb(32, 32, 32);
-    }
-    .ventana-3{
-        display: none;
-        width: 100%; 
-        height: 90%;
-        background: rgba(0, 0, 0, 0.845);
-        justify-content: center;
-        align-items: center;
-        z-index: 100001;
-    }
-    .ventana-3.show{
-        display: flex;
-        overflow-y: hidden;
-        position: fixed;
-        top: 5%;
-    }
-    .ventana-fondo-3{
-        width: 90%;
-        height: 900px;
-        background-color: rgb(32, 32, 32);
-    }
-    .descripcion-waspe{
-        width: 100% !important;
-        text-align: center;
-        position: absolute !important;
-        left: 63.5% !important;
-        top: 64% !important;
-        transform: translate(-50%, -50%);
-        gap: 15px;
-    }
-    /* Ventanas */
-    /* Agotado */
-    .agotado{
-        position: absolute;
-        top: 1.8%;
-        left: 0;
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 700px;
-        background-color: rgba(0, 0, 0, 0.6);
-        z-index: 10000;
-    }
-    .agotado p{
-        font-size: 30px;
-        z-index: 10001;
-    }
-    /* Agotado */
-    /* Footer */
-    .esencial{
-        gap: 10px;
-        flex-direction: column;
-        padding: 10px;
-    }
-    .titulo-footer h1{
-        font-size: 35px !important;
-        margin-bottom: 10%;
-        text-align: center;
-    }
-    .titulo-footer p{
-        margin-bottom: 10%;
-        text-align: center;
-    }
-    .problema{
-        width: 100%;
-        gap: 15px !important;
-    }
-    .problema h2{
-        font-size: 15px !important;
-    }
-    .problema p{
-        font-size: 10px !important;
-
-    }
-    .problema-correo{
-        width: 100%;
-    }
-    .problema-correo a{
-        padding: 30px 15px !important;
-        background-color: white;
-        width: 100%;
-        color: black;
-        transition: transform 0.3s ease;
-    }
-    .problema-correo a:hover{
-        transform: translate(0.3);
-    }
-}
-/* Footer */
 /* =========================================================
    📱 RESPONSIVE: MÓVIL (hasta 430px)
    ========================================================= */
@@ -1246,6 +978,7 @@ footer{
 
     .descripcion-bang h2, .descripcion-razzbar h2, .descripcion-vopk h2, .descripcion-waspe h2 {
         font-size: 15px !important;
+        left: 0 !important;
     }
 
     .descripcion-bang p, .descripcion-razzbar p, .descripcion-vopk p, .descripcion-waspe p {
@@ -1267,6 +1000,12 @@ footer{
         padding: 5px 30px;
     }
 
+    .elegir-contacto, .elegir-contacto-1 {
+        left: 16%;
+        top: 85%;
+        padding: 12px 60px;
+    }
+
     /* ---------- AGOTADO ---------- */
     .agotado {
         position: absolute;
@@ -1286,6 +1025,7 @@ footer{
         font-size: 30px;
         z-index: 10001;
     }
+    
 
     /* ---------- FOOTER ---------- */
     .esencial {
