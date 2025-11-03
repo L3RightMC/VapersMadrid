@@ -39,5 +39,6 @@ Versión 3.3: Cantidades de productos "Waspe"
 Versión 4.0: Agregar la marca "Razzbar" y agotado los "Waspe"  
 Versión: 4.1: Agotado en algunos productos "Razzbar"
 Versión: 4.2: Agotado y cantidades en algunos productos "Razzbar", Agotado todo "Bang" y mejor organización en CSS
+Versión: 4.3: Mejor adaptación a dispositivos móviles/tablets
   
 Gracias por utilizar mi web!!  
