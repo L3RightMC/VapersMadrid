@@ -980,14 +980,12 @@ footer{
     }
     .descripcion-razzbar h2{
         font-size: 15px !important;
-        background-color: red;
         text-align: justify;
     }
     .descripcion-bang h2, .descripcion-vopk h2, .descripcion-waspe h2 {
         font-size: 15px !important;
         left: 0 !important;
         text-align: center !important;
-        background-color: red;
     }
 
     .descripcion-bang p, .descripcion-razzbar p, .descripcion-vopk p, .descripcion-waspe p {
@@ -1362,3 +1360,4 @@ footer{
         overflow: hidden;
     }
 }
+
