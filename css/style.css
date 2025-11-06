@@ -328,6 +328,9 @@ header{
     background-color: rgb(91, 255, 79);
     color: white;
 }
+.comprar-whatsapp img{
+    filter: invert(1);
+}
 .comprar-instagram{
     background-color: rgb(255, 85, 204);
     color: white;
@@ -652,7 +655,7 @@ header{
 /* ------------------------------------------------- */
 /* Producto: Waspe */
 .home-waspe{
-    height: 120vh;
+    height: 170vh;
     padding: 40px;
     margin-bottom: 10%;
     position: relative;

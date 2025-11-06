@@ -108,7 +108,8 @@ document.addEventListener("DOMContentLoaded", () => {
         };
       }
       // Instagram
-      const btnIG = contactoVentana.querySelector(".comprar-instagram");
+
+      const btnIG = contactoVentana.querySelctor(".comprar-instagram");
       if (h2 && btnIG) {
         // Reemplazamos el botón para eliminar posibles listeners anteriores
         btnIG.replaceWith(btnIG.cloneNode(true));
@@ -119,7 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
           let alertMsg = "Texto copiado al portapapeles. Pégalo en Instagram.";
           if (!(navigator.clipboard && navigator.clipboard.writeText)) {
-          alertMsg = "Tu navegador no soporta copiar al portapapeles. Pega el mensaje manualmente en Instagram.";
+            alertMsg = "Tu navegador no soporta copiar al portapapeles. Pega el mensaje manualmente en Instagram.";
           }
 
           alert(alertMsg);
