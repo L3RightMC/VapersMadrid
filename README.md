@@ -41,5 +41,6 @@ Versión: 4.1: Agotado en algunos productos "Razzbar"
 Versión: 4.2: Agotado y cantidades en algunos productos "Razzbar", Agotado todo "Bang" y mejor organización en CSS  
 Versión: 4.3: Mejor adaptación a dispositivos móviles/tablets  
 Versión 5.0:  Agregar productos "Waspe", agotado en algunos productos y contactar en instagram no disponible  
+Versión 5.1:  Mejor adaptacion en pantallas móviles de productos "Waspe"
   
 Gracias por utilizar mi web!!  
