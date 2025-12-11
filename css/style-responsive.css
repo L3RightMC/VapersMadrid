@@ -1,0 +1,308 @@
+
+@media (max-width: 430px) {
+
+    /* ---------- RAÍZ ---------- */
+    body, html {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .promos {
+        font-size: 15px;
+        text-align: center;
+    }
+    /* ---------- NAVEGACIÓN ---------- */
+    header nav ul {
+        display: none; 
+    }
+
+    .video-fondo {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+    }
+
+    .logo-nav {
+        font-family: 'Phage';
+        display: block;
+    }
+
+    .deslizar img {
+        width: 35px;
+        height: 35px;
+        filter: invert(100%);
+        animation: abajo-anim 1.6s infinite;
+    }
+
+    /* ---------- PRESENTACIÓN ---------- */
+    .home-presentacion {
+        margin-top: -40%;
+        height: 120vh;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .home-presentacion span {
+        margin-bottom: 30%;
+    }
+
+    .home-presentacion-h1 {
+        top: 34%;
+        text-align: center;
+    }
+
+    /* ---------- SECCIONES DE MARCAS ---------- */
+    .home-bang, .home-razzbar, .home-waspe, .home-vopk {
+        height: 200%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(1fr));
+        gap: 15px;
+        justify-items: center;
+        width: 100%;
+        max-width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+        overflow-y: hidden;
+    }
+
+    .home-waspe, .home-razzbar {
+        position: relative;
+    }
+
+    /* ---------- PRODUCTOS ---------- */
+    .productos-bang, .productos-razzbar, .productos-waspe, .productos-vopk {
+        justify-items: center;
+    }
+
+    .bang-titulo, .razzbar-titulo, .waspe-titulo, .vopk-titulo {
+        gap: 1px;
+        text-align: center;
+    }
+    /* ventana */
+    .ventana .cerrar-ventana, .ventana-1 .cerrar-ventana, .ventana-2 .cerrar-ventana, .ventana-3 .cerrar-ventana{
+        padding: 10px 20px !important;
+        left: 85%;
+    }
+    .ventana, .ventana-1, .ventana-2, .ventana-3 * {
+        padding: 0 !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+    }
+    .ventana-fondo * {
+        display: flex !important;
+        flex-direction: column !important;
+        flex-wrap: wrap !important;
+        gap: 0;
+        text-align: center;
+    }
+    .bang-img img, .razzbar-img img, .vopk-img img, .waspe-img img{
+        z-index: 1;
+        width: 200px !important;
+        border-radius: 5px;
+    }
+    .descripcion-bang, .descripcion-razzbar, .descripcion-vopk, .descripcion-waspe{
+        padding: 1px !important;
+        z-index: 1;
+        display: flex!important;
+        flex-direction: column!important;
+        justify-content: center!important;
+        align-items: center!important;
+        width: 100% !important;
+        gap: 10px !important;
+    }
+    .desc-bang, .desc-razzbar, .desc-vopk, .desc-waspe{
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px !important;
+    }
+    .elegir-contacto{
+        padding: 5px 30px !important; 
+        background-color: white !important;
+    }
+    .agotado {
+        position: absolute;
+        top: 1.8%;
+        left: 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 700px;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 10000;
+    }
+
+    .agotado p {
+        font-size: 30px;
+        z-index: 10001;
+    }
+    .esencial{
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+    .titulo-footer{
+        text-align: center;
+    }
+    .titulo-footer h1{
+        font-size: 35px;
+    }
+    .problema{
+        width: 130% !important;
+        height: 100px;
+    }
+    .problema-titulo h2{
+        font-size: 16px;
+    }
+    .problema-titulo p{
+        font-size: 12px;
+    }
+    .problema-correo a{
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 431px) and (max-width: 1024px) {
+     /* ---------- RAÍZ ---------- */
+    body, html {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .promos {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    /* ---------- NAVEGACIÓN ---------- */
+    header nav ul {
+        display: none; /* Oculta menú principal en móvil */
+    }
+
+    .video-fondo {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+    }
+
+    .logo-nav {
+        font-family: 'Phage';
+        display: block; /* Muestra el logo en móvil */
+    }
+
+    .deslizar img {
+        width: 35px;
+        height: 35px;
+        filter: invert(100%);
+        animation: abajo-anim 1.6s infinite;
+    }
+
+    /* ---------- PRESENTACIÓN ---------- */
+    .home-presentacion {
+        margin-top: -40%;
+        height: 120vh;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .home-presentacion span {
+        margin-bottom: 30%;
+    }
+
+    .home-presentacion-h1 {
+        top: 34%;
+        text-align: center;
+    }
+
+    /* ---------- SECCIONES DE MARCAS ---------- */
+    .home-bang, .home-razzbar, .home-waspe {
+        height: 135vh;
+        gap: 15px;
+        justify-items: center;
+        box-sizing: border-box;
+        overflow-y: hidden;
+    }
+    .home-vopk{
+        height: 80vh;
+    }
+    .home-razzbar{
+        height: 170vh;
+    }
+    .home-waspe, .home-razzbar {
+        position: relative;
+    }
+
+    /* ---------- PRODUCTOS ---------- */
+    .productos-bang, .productos-razzbar, .productos-waspe, .productos-vopk {
+        justify-items: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .bang-titulo, .razzbar-titulo, .waspe-titulo, .vopk-titulo {
+        gap: 1px;
+        text-align: center;
+    }
+
+    .ventana .cerrar-ventana, .ventana-1 .cerrar-ventana, .ventana-2 .cerrar-ventana, .ventana-3 .cerrar-ventana{
+        padding: 10px 20px !important;
+        left: 85%;
+    }
+    .ventana, .ventana-1, .ventana-2, .ventana-3 * {
+        padding: 0 !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+    }
+    .ventana-fondo * {
+        display: flex !important;
+        flex-direction: column !important;
+        flex-wrap: wrap !important;
+        gap: 0;
+        text-align: center;
+    }
+    .bang-img img, .razzbar-img img, .vopk-img img, .waspe-img img{
+        z-index: 1;
+        width: 200px !important;
+        border-radius: 5px;
+    }
+    .descripcion-bang, .descripcion-razzbar, .descripcion-vopk, .descripcion-waspe{
+        padding: 1px !important;
+        z-index: 1;
+        display: flex!important;
+        flex-direction: column!important;
+        justify-content: center!important;
+        align-items: center!important;
+        width: 100% !important;
+        gap: 10px !important;
+    }
+    .desc-bang, .desc-razzbar, .desc-vopk, .desc-waspe{
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px !important;
+    }
+    .elegir-contacto{
+        padding: 10px 30px !important; 
+        background-color: white !important;
+    }
+    .esencial{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+    .problema{
+        width: 100%;
+    }
+}

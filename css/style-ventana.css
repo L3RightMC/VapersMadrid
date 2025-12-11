@@ -1,0 +1,133 @@
+/* Ventana: Bang */
+.ventana{
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 1000;
+}
+.ventana.show{
+    display: flex;
+    position: fixed;
+}
+.ventana-fondo{
+    background-color: rgb(30, 30, 30);
+    width: 90%;
+    height: 600px;
+    border-radius: 5px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bang-img img, .razzbar-img img, .vopk-img img, .waspe-img img{
+    z-index: 1;
+    width: 490px;
+    border-radius: 5px;
+}
+.descripcion-bang, .descripcion-razzbar, .descripcion-vopk, .descripcion-waspe{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.desc-bang, .desc-razzbar, .desc-vopk, .desc-waspe{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.precio-s{
+    animation: encoger 2s infinite;
+}
+/* Ventana: Bang */
+/* ------------------------------------------------- */
+/* Ventana: Razzbar */
+.ventana-1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 1000;
+}
+.ventana-1.show {
+    display: flex;
+}
+.ventana-fondo-1{
+    background-color: rgb(32, 32, 32);
+    width: 90%;
+    height: 600px;
+    border-radius: 5px;
+    padding: 30px;
+}
+/* ------------------------------------------------- */
+
+/* ------------------------------------------------- */
+/* Ventana: Vopk */
+.ventana-2{
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 1000;
+}
+.ventana-2.show{
+    display: flex;
+    position: fixed;
+    top: 0.1%;
+    left: 0.1%;
+}
+.ventana-fondo-2{
+    background-color: rgb(32, 32, 32);
+    width: 90%;
+    height: 600px;
+    border-radius: 5px;
+    padding: 30px;
+}
+/* Ventana: Vopk */
+/* ------------------------------------------------- */
+
+/* Ventana: Waspe */
+.ventana-3{
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 1000;
+}
+.ventana-3.show{
+    display: flex;
+    position: fixed;
+    top: 0.1%;
+    left: 0.1%;
+}
+.ventana-fondo-3{
+    background-color: rgb(32, 32, 32);
+    width: 90%;
+    height: 600px;
+    border-radius: 5px;
+    padding: 30px;
+}
+/* Ventana: Waspe */
+/* ------------------------------------------------- */
