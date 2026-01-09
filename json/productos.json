@@ -30,21 +30,21 @@
             "id": 4,
             "cantidad": 1
         },
-        {   "imagen": "img/bang/bang1.jpg",
+        {   "imagen": "img/bang/bang5.png",
             "nombre": "Bang Blueberry Ice & Black Dragon Ice",
             "descripcion": "Vaper dual (2 en 1) mitad sabor arándanos (28ML) y mitad sabor a dragón negro (28ML). De 32.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
             "precio": 14,
             "id": 5,
             "cantidad": 1
         },
-        {   "imagen": "img/bang/bang5.png",
+        {   "imagen": "img/bang/bang6.jpg",
             "nombre": "Bang Redbull & Blueberry Watermelon",
             "descripcion": "Vaper dual (2 en 1) mitad sabor redbull (28ML) y mitad sabor a arándanos con sandía (28ML). De 32.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
             "precio": 14,
             "id": 6,
             "cantidad": 1
         },
-        {   "imagen": "img/bang/bang6.jpg",
+        {   "imagen": "img/bang/bang7.jpg",
             "nombre": "Bang Blueberry Ice & Strawberry Banana",
             "descripcion": "Vaper dual (2 en 1) mitad sabor arándanos(28ML) y mitad sabor a fresa y plátano (28ML). De 32.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
             "precio": 14,
@@ -79,15 +79,15 @@
             "nombre": "Razzbar Blackberry Ice",
             "descripcion": "Vaper individual sabor mora. de 30.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
             "cantidad": 1,
-            "precio": 15,
+            "precio": 13,
             "id": 1
         },
         {
             "imagen": "img/razzbar/razzbar2.jpg",
             "nombre": "Razzbar X3 Melon",
             "descripcion": "Vaper individual sabor triple de melón. de 30.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
-            "cantidad": 1,
-            "precio": 15,
+            "cantidad": 0,
+            "precio": 13,
             "id": 2
         },
         {
@@ -95,23 +95,23 @@
             "nombre": "Razzbar Lemon Lime",
             "descripcion": "Vaper individual sabor lima limón. de 30.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
             "cantidad": 1,
-            "precio": 15,
+            "precio": 13,
             "id": 3
         },
         {
             "imagen": "img/razzbar/razzbar4.jpg",
             "nombre": "Razzbar Mango Peach Watermelon",
             "descripcion": "Vaper individual sabor mango, melocotón y sandía. de 30.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
-            "cantidad": 1,
-            "precio": 15,
+            "cantidad": 0,
+            "precio": 13,
             "id": 4
         },
         {
             "imagen": "img/razzbar/razzbar5.jpg",
             "nombre": "Razzbar Strawberry Ice",
             "descripcion": "Vaper individual sabor fresa. de 30.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
-            "cantidad": 1,
-            "precio": 15,
+            "cantidad": 0,
+            "precio": 13,
             "id": 5
         },
         {
@@ -119,39 +119,39 @@
             "nombre": "Razzbar Mixed Berries",
             "descripcion": "Vaper individual sabor bayas mixtas. de 30.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
             "cantidad": 1,
-            "precio": 15,
+            "precio": 13,
             "id": 6
         },
         {
             "imagen": "img/razzbar/razzbar7.jpg",
             "nombre": "Razzbar Strawberry Watermelon",
             "descripcion": "Vaper individual sabor sandía y fresa. de 30.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
-            "cantidad": 1,
-            "precio": 15,
+            "cantidad": 0,
+            "precio": 13,
             "id": 7
         },
         {
             "imagen": "img/razzbar/razzbar8.jpg",
             "nombre": "Razzbar Strawberry Kiwi",
             "descripcion": "Vaper individual sabor fresa y kiwi. de 30.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
-            "cantidad": 1,
-            "precio": 15,
+            "cantidad": 0,
+            "precio": 13,
             "id": 8
         },
         {
             "imagen": "img/razzbar/razzbar9.png",
             "nombre": "Razzbar Sour Apple",
             "descripcion": "Vaper individual sabor manzana. de 30.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
-            "cantidad": 1,
-            "precio": 15,
+            "cantidad": 0,
+            "precio": 13,
             "id": 9
         },
         {
             "imagen": "img/razzbar/razzbar10.jpeg",
             "nombre": "Razzbar Strawberry Banana",
             "descripcion": "Vaper individual sabor fresa y plátano. de 30.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
-            "cantidad": 1,
-            "precio": 15,
+            "cantidad": 0,
+            "precio": 13,
             "id": 10
         },
         {
@@ -159,7 +159,7 @@
             "nombre": "Razzbar Blue Razz Ice",
             "descripcion": "Vaper individual sabor frambuesa azul. de 30.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
             "cantidad": 1,
-            "precio": 15,
+            "precio": 13,
             "id": 11
         },
         {
@@ -167,15 +167,15 @@
             "nombre": "Juicy Peach Ice",
             "descripcion": "Vaper individual sabor melocotón. de 30.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
             "cantidad": 1,
-            "precio": 15,
+            "precio": 13,
             "id": 12
         },
         {
             "imagen": "img/razzbar/razzbar14.png",
-            "nombre": "Razzbar Wtermelon Ice",
+            "nombre": "Razzbar Watermelon Ice",
             "descripcion": "Vaper individual sabor sandía. de 30.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
-            "precio": 15,
-            "cantidad": 1,
+            "precio": 13,
+            "cantidad": 0,
             "id": 13
         },
         {
@@ -183,7 +183,7 @@
             "nombre": "Razzbar Blueberry Ice",
             "descripcion": "Vaper individual sabor arándano. de 30.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
             "cantidad": 1,
-            "precio": 15,
+            "precio": 13,
             "id": 14
         },
         {
@@ -191,7 +191,7 @@
             "nombre": "Razzbar Summer Dream",
             "descripcion": "Vaper individual sabor uva. de 30.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
             "cantidad": 0,
-            "precio": 15,
+            "precio": 13,
             "id": 14
         }
     ],
@@ -200,7 +200,7 @@
             "imagen": "img/vopk/vopk1.png",
             "nombre": "Vopk Redbull Ice / Passion Fruit Kiwi Lime / Sour Apple Raspberry / Strawberry Watermelon Bubblegum",
             "descripcion": "Vaper cuádruple sabor redbull, maracuyá kiwi lima, manzana y frambuesa, fresa sandía chicle. de 80.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️<",
-            "cantidad": 1,
+            "cantidad": 0,
             "precio": 18,
             "id": 1
         },
@@ -208,7 +208,7 @@
             "imagen": "img/vopk/vopk2.png",
             "nombre": "Vopk Strawberry Watermelon / Cranberry Grapple / Mango Ice / Strawberry Raspberry Candy",
             "descripcion": "Vaper cuádruple sabor sandía y fresa, arándano y uva, mango, caramelo de frambuesa y fresa. de 80.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
-            "cantidad": 1,
+            "cantidad": 0,
             "precio": 18,
             "id": 2
         },
@@ -282,7 +282,7 @@
             "imagen": "img/waspe/waspe1.png",
             "nombre": "Waspe Strawberry Banana / Strawberry Red Bull / Strawberry Mango / Pink Lemonade",
             "descripcion": "Vaper cuádruple sabor fresa y plátano / fresa y redbull / fresa y mango / limonada rosa de 100.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
-            "cantidad": 1,
+            "cantidad": 0,
             "precio": 18,
             "id": 7
         },
@@ -306,7 +306,7 @@
             "imagen": "img/waspe/waspe4.png",
             "nombre": "Waspe Cherry Cola Ice / Strawberry Cherry Ice / Strawberry Cola Ice / Strawberry Watermelon Bubblegum",
             "descripcion": "Vaper cuádruple sabor Hielo de cola de cereza / Hielo de cereza de fresa / Hielo de cola de fresa / Chicle de fresa y sandía rosa de 100.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
-            "cantidad": 1,
+            "cantidad": 0,
             "precio": 18,
             "id": 10
         },

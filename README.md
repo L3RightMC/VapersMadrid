@@ -44,5 +44,6 @@ Versión 5.0:  Agregar productos "Waspe", agotado en algunos productos y contact
 Versión 5.1:  Mejor adaptacion en pantallas móviles de productos "Waspe"  
 Versión 6.0: Mejor estructura de la web (antes, en "Languages", tenia más html, que css y js juntos. ahora ya no. gracias json) + mejor diseño + mejor adaptacion en dispositivos móviles + agregado en algunos productos "Razzbar"   
 Versión 6.1: Agotado en algunos productos "Razzbar"   
+Versión 6.2: Agotado en algunos productos "Razzbar", "Waspe" y agregados en algunos productos "Bang"
   
 Gracias por utilizar mi web!!  
