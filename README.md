@@ -52,5 +52,6 @@ Versión 6.1: Agotado en algunos productos "Razzbar"
 Versión 6.2: Agotado en algunos productos "Razzbar", "Waspe" y agregados en algunos productos "Bang"
 
 Versión 7.0: Nueva sección: "Razzbar 60k". Y mejor responsive para móviles
+Versión 7.0.1: Corregir codigos
 
 Gracias por utilizar mi web!!  
