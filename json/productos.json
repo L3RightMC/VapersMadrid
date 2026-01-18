@@ -73,7 +73,7 @@
             "cantidad": 1
         }
     ],
-    "razzbar": [
+    "razzbar30": [
         {
             "imagen": "img/razzbar/razzbar1.jpg",
             "nombre": "Razzbar Blackberry Ice",
@@ -175,7 +175,7 @@
             "nombre": "Razzbar Watermelon Ice",
             "descripcion": "Vaper individual sabor sandía. de 30.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
             "precio": 13,
-            "cantidad": 0,
+            "cantidad": 1,
             "id": 13
         },
         {
@@ -195,11 +195,117 @@
             "id": 14
         }
     ],
+    "razzbar60": [
+        {
+            "imagen": "img/razzbar60k/razzbar-60k-1.png",
+            "nombre": "Razzbar Coco Loco",
+            "descripcion": "Vaper individual sabor coco. de 60.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
+            "cantidad": 1,
+            "precio": 15,
+            "id": 1
+        },
+        {
+            "imagen": "img/razzbar60k/razzbar-60k-2.png",
+            "nombre": "Razzbar Strawberry Vainilla Coke",
+            "descripcion": "Vaper individual sabor fresa, vainilla y cola. de 60.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
+            "cantidad": 1,
+            "precio": 15,
+            "id": 2
+        },
+        {
+            "imagen": "img/razzbar60k/razzbar-60k-3.png",
+            "nombre": "Razzbar Juicy Peach Ice",
+            "descripcion": "Vaper individual sabor melocotón. de 60.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
+            "cantidad": 1,
+            "precio": 15,
+            "id": 3
+        },
+        {
+            "imagen": "img/razzbar60k/razzbar-60k-4.png",
+            "nombre": "Razzbar Lemon Peach Passion Fruit",
+            "descripcion": "Vaper individual sabor limón, melocotón y maracuyá. de 60.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
+            "cantidad": 1,
+            "precio": 15,
+            "id": 4
+        },
+        {
+            "imagen": "img/razzbar60k/razzbar-60k-5.png",
+            "nombre": "Razzbar Strawberry Tropical Fruit",
+            "descripcion": "Vaper individual sabor tropical, sandía y chicle. de 60.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
+            "cantidad": 1,
+            "precio": 15,
+            "id": 5
+        },
+        {
+            "imagen": "img/razzbar60k/razzbar-60k-6.png",
+            "nombre": "Razzbar Love 66",
+            "descripcion": "Vaper individual sabor a pintauñas (no sé que sabor es). de 60.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
+            "cantidad": 1,
+            "precio": 15,
+            "id": 6
+        },
+        {
+            "imagen": "img/razzbar60k/razzbar-60k-7.png",
+            "nombre": "Razzbar Black Dragon Fruit Strawberry",
+            "descripcion": "Vaper individual sabor frutas de gradon con fresa. de 60.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
+            "cantidad": 1,
+            "precio": 15,
+            "id": 7
+        },
+        {
+            "imagen": "img/razzbar60k/razzbar-60k-8.png",
+            "nombre": "Razzbar Summer Dream",
+            "descripcion": "Vaper individual sabor uva. de 60.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
+            "cantidad": 1,
+            "precio": 15,
+            "id": 8
+        },
+        {
+            "imagen": "img/razzbar60k/razzbar-60k-9.png",
+            "nombre": "Razzbar Blueberry Sour Raspberry",
+            "descripcion": "Vaper individual sabor arándano y frambuesa. de 60.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
+            "cantidad": 1,
+            "precio": 15,
+            "id": 9
+        },
+        {
+            "imagen": "img/razzbar60k/razzbar-60k-10.png",
+            "nombre": "Razzbar Gummy Bear",
+            "descripcion": "Vaper individual sabor ≈ piña colada. de 60.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
+            "cantidad": 1,
+            "precio": 15,
+            "id": 10
+        },
+        {
+            "imagen": "img/razzbar60k/razzbar-60k-11.png",
+            "nombre": "Razzbar Strawberry Cottom Candy",
+            "descripcion": "Vaper individual sabor algodón de azúcar. de 60.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
+            "cantidad": 1,
+            "precio": 15,
+            "id": 11
+        },
+        {
+            "imagen": "img/razzbar60k/razzbar-60k-12.png",
+            "nombre": "Razzbar Strawberry Banana",
+            "descripcion": "Vaper individual sabor fresa y plátano. de 60.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
+            "cantidad": 1,
+            "precio": 15,
+            "id": 12
+        },
+        {
+            "imagen": "img/razzbar60k/razzbar-60k-13.png",
+            "nombre": "Razzbar Lemon Lime",
+            "descripcion": "Vaper individual sabor lima limón. de 60.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
+            "cantidad": 1,
+            "precio": 15,
+            "id": 13
+        }
+    ],
     "vopk": [
         {
             "imagen": "img/vopk/vopk1.png",
             "nombre": "Vopk Redbull Ice / Passion Fruit Kiwi Lime / Sour Apple Raspberry / Strawberry Watermelon Bubblegum",
-            "descripcion": "Vaper cuádruple sabor redbull, maracuyá kiwi lima, manzana y frambuesa, fresa sandía chicle. de 80.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️<",
+            "descripcion": "Vaper cuádruple sabor redbull, maracuyá kiwi lima, manzana y frambuesa, fresa sandía chicle. de 80.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
             "cantidad": 0,
             "precio": 18,
             "id": 1

@@ -61,14 +61,24 @@ document.addEventListener("DOMContentLoaded", () => {
           descClase: 'desc-bang',
           promo: '⚠️SPAM EN IG -2€ DE DESCUENTO⚠️'
         },
-        razzbar: { 
-          contenedor: '.productos-razzbar', 
-          clase: 'product-razzbar', 
+        razzbar30: { 
+          contenedor: '.productos-razzbar30', 
+          clase: 'product-razzbar30', 
           data: 'ventana',
           ventanaClase: 'ventana-1',
-          descripcionClase: 'descripcion-razzbar',
-          imgClase: 'razzbar-img',
-          descClase: 'desc-razzbar',
+          descripcionClase: 'descripcion-razzbar30',
+          imgClase: 'razzbar30-img',
+          descClase: 'desc-razzbar30',
+          promo: '⚠️SPAM EN IG -1€ DE DESCUENTO⚠️'
+        },
+        razzbar60: { 
+          contenedor: '.productos-razzbar60', 
+          clase: 'product-razzbar60', 
+          data: 'ventana4',
+          ventanaClase: 'ventana-4',
+          descripcionClase: 'descripcion-razzbar60',
+          imgClase: 'razzbar60-img',
+          descClase: 'desc-razzbar60',
           promo: '⚠️SPAM EN IG -1€ DE DESCUENTO⚠️'
         },
         vopk: { 
@@ -163,9 +173,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // --- VENTANAS DE PRODUCTO ---
   document.addEventListener("click", (e) => {
-    const btn = e.target.closest(".product-bang, .product-razzbar, .product-vopk, .product-waspe");
+    const btn = e.target.closest(".product-bang, .product-razzbar30, .product-razzbar60, .product-vopk, .product-waspe");
     if (!btn) return;
 
     let num, ventana;
@@ -175,10 +184,15 @@ document.addEventListener("DOMContentLoaded", () => {
       ventana = document.querySelector(`.ventana[data-ventana="${num}"]`);
       console.log("clicked (BANG) num:", num, "ventana:", ventana);
     } 
-    else if (btn.classList.contains("product-razzbar")) {
+    else if (btn.classList.contains("product-razzbar30")) {
       num = btn.getAttribute("data-ventana")?.trim();
       ventana = document.querySelector(`.ventana-1[data-ventana="${num}"]`);
-      console.log("clicked (RAZZ) num:", num, "ventana:", ventana);
+      console.log("clicked (RAZZ30) num:", num, "ventana:", ventana);
+    }
+    else if (btn.classList.contains("product-razzbar60")) {
+      num = btn.getAttribute("data-ventana4")?.trim();
+      ventana = document.querySelector(`.ventana-4[data-ventana4="${num}"]`);
+      console.log("clicked (RAZZ60) num:", num, "ventana:", ventana);
     }
     else if (btn.classList.contains("product-vopk")) {
       num = btn.getAttribute("data-ventana2")?.trim();
@@ -205,7 +219,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!e.target.closest(".elegir-contacto, .elegir-contacto-1")) return;
 
     const btn = e.target.closest(".elegir-contacto, .elegir-contacto-1");
-    const ventana = btn.closest(".ventana, .ventana-1, .ventana-2, .ventana-3");
+    const ventana = btn.closest(".ventana, .ventana-1, .ventana-2, .ventana-3, .ventana-4");
     if (!ventana) return;
 
     const contactoVentana = document.querySelector(".contacto-elegir, .contacto-elegir-1");
@@ -256,7 +270,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener("click", (e) => {
     // Botón cerrar
     if (e.target.closest(".cerrar-ventana, .cerrar-ventana-con")) {
-      const ventana = e.target.closest(".ventana, .ventana-1, .ventana-2, .ventana-3, .contacto-elegir");
+      const ventana = e.target.closest(".ventana, .ventana-1, .ventana-2, .ventana-3, .ventana-4, .contacto-elegir");
       if (ventana) {
         ventana.classList.remove("show");
         document.body.style.overflow = "";
@@ -267,7 +281,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (e.target.classList.contains("ventana") || 
         e.target.classList.contains("ventana-1") || 
         e.target.classList.contains("ventana-2") || 
-        e.target.classList.contains("ventana-3")) {
+        e.target.classList.contains("ventana-3") ||
+        e.target.classList.contains("ventana-4")) {
       e.target.classList.remove("show");
       document.body.style.overflow = "";
     }

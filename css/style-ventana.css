@@ -14,44 +14,55 @@
 .ventana.show{
     display: flex;
     position: fixed;
+    top: 0.1%;
+    left: 0.1%;
 }
 .ventana-fondo{
-    background-color: rgb(30, 30, 30);
+    background-color: rgb(32, 32, 32);
     width: 90%;
-    height: 600px;
+    height: 800px;
     border-radius: 5px;
     padding: 30px;
     display: flex;
+}
+.descripcion-bang{
+    display: flex;
     align-items: center;
     justify-content: center;
-}
-.bang-img img, .razzbar-img img, .vopk-img img, .waspe-img img{
-    z-index: 1;
-    width: 490px;
-    border-radius: 5px;
-}
-.descripcion-bang, .descripcion-razzbar, .descripcion-vopk, .descripcion-waspe{
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-}
-.desc-bang, .desc-razzbar, .desc-vopk, .desc-waspe{
-    max-width: 50%;
-    display: flex;
-    flex-direction: column;
     gap: 50px;
 }
-.precio-s{
-    animation: encoger 2s infinite;
+.bang-img{
+    display: flex;
+}
+.bang-img img{
+    width: 1200px;
+    border-radius: 5px;
+}
+.desc-bang{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.desc-bang h2{
+    font-size: 40px;
+}
+.desc-bang p{
+    font-size: 20px;
+}
+.elegir-contacto{
+    padding: 30px 50px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
 }
 /* Ventana: Bang */
 /* ------------------------------------------------- */
 /* Ventana: Razzbar */
 .ventana-1{
     position: fixed;
-    top: 0;
+    top: 0%;
     left: 0;
     width: 100%;
     height: 100%;
@@ -61,18 +72,97 @@
     background: rgba(0, 0, 0, 0.85);
     z-index: 1000;
 }
-.ventana-1.show {
+.ventana-1.show{
     display: flex;
+    position: fixed;
+    top: 0.1%;
+    left: 0.1%;
 }
-.ventana-fondo-1{
+.ventana-fondo{
     background-color: rgb(32, 32, 32);
     width: 90%;
-    height: 600px;
+    height: 800px;
     border-radius: 5px;
     padding: 30px;
+    display: flex;
+}
+.descripcion-razzbar30{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.razzbar30-img{
+    display: flex;
+}
+.razzbar30-img img{
+    width: 900px;
+    border-radius: 5px;
+}
+.desc-razzbar30{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.desc-razzbar30 h2{
+    font-size: 40px;
+}
+.desc-razzbar30 p{
+    font-size: 20px;
 }
 /* ------------------------------------------------- */
-
+/* Ventana: Razzbar 60k */
+.ventana-4{
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 1000;
+}
+.ventana-4.show{
+    display: flex;
+    position: fixed;
+    top: 0.1%;
+    left: 0.1%;
+}
+.ventana-fondo{
+    background-color: rgb(32, 32, 32);
+    width: 90%;
+    height: 800px;
+    border-radius: 5px;
+    padding: 30px;
+    display: flex;
+}
+.descripcion-razzbar60{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.razzbar60-img{
+    display: flex;
+}
+.razzbar60-img img{
+    width: 900px;
+    border-radius: 5px;
+}
+.desc-razzbar60{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.desc-razzbar60 h2{
+    font-size: 40px;
+}
+.desc-razzbar60 p{
+    font-size: 20px;
+}
+/* Ventana: Razzbar 60k */
 /* ------------------------------------------------- */
 /* Ventana: Vopk */
 .ventana-2{
@@ -93,12 +183,37 @@
     top: 0.1%;
     left: 0.1%;
 }
-.ventana-fondo-2{
+.ventana-fondo{
     background-color: rgb(32, 32, 32);
     width: 90%;
-    height: 600px;
+    height: 800px;
     border-radius: 5px;
     padding: 30px;
+    display: flex;
+}
+.descripcion-vopk{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.vopk-img{
+    display: flex;
+}
+.vopk-img img{
+    width: 1200px;
+    border-radius: 5px;
+}
+.desc-vopk{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.desc-vopk h2{
+    font-size: 40px;
+}
+.desc-vopk p{
+    font-size: 20px;
 }
 /* Ventana: Vopk */
 /* ------------------------------------------------- */
@@ -122,12 +237,37 @@
     top: 0.1%;
     left: 0.1%;
 }
-.ventana-fondo-3{
+.ventana-fondo{
     background-color: rgb(32, 32, 32);
     width: 90%;
-    height: 600px;
+    height: 800px;
     border-radius: 5px;
     padding: 30px;
+    display: flex;
+}
+.descripcion-waspe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.waspe-img{
+    display: flex;
+}
+.waspe-img img{
+    width: 1200px;
+    border-radius: 5px;
+}
+.desc-waspe{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.desc-waspe h2{
+    font-size: 40px;
+}
+.desc-waspe p{
+    font-size: 20px;
 }
 /* Ventana: Waspe */
 /* ------------------------------------------------- */

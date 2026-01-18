@@ -1,6 +1,6 @@
 /* Productos: Bang */
 .home-bang{
-    height: 110vh;
+    height: 120vh;
     padding: 40px;
     margin-bottom: 10%;
     overflow-y: hidden;
@@ -8,9 +8,9 @@
 }
 .bang-titulo{
     display: flex;
-    gap: 460px;
+    gap: 540px;
     margin-bottom: 0.5%;
-    font-size: 15px;
+    font-size: 22px;
     text-align: start !important;
 }
 .bang hr{
@@ -18,9 +18,9 @@
 }
 .productos-bang{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 10px;
     font-family: 'Geomanist';
 }
 .product-bang{
@@ -32,9 +32,9 @@
     backdrop-filter: blur(5px);
     border-radius: 10px;
     color: white;
-    padding: 15px;
+    padding: 20px;
     box-sizing: border-box;
-    width: 250px;
+    width: 340px;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -46,46 +46,47 @@
 .product-bang img {
     width: 100%;
     border-radius: 10px;
+    margin-bottom: 10%;
     height: auto;
 }
 .product-bang p, .product-bang span{
     margin: 5px 0;
-    font-size: 16px;
+    font-size: 20px;
 }
 .agotado-bang{
     position: relative;
-    width: 250px;
+    width: 340px;
     z-index: 100;
 }
 /* Productos: Bang */
 /* ------------------------------------------------- */
 /* Productos: Razzbar */
-.home-razzbar{
-    height: 165vh;
+.home-razzbar30{
+    height: 160vh;
     padding: 40px;
     margin-bottom: 10%;
     overflow: hidden;
     position: relative;
 }
-.razzbar-titulo{
+.razzbar30-titulo{
     display: flex;
-    gap: 450px;
+    gap: 520px;
     margin-bottom: 0.5%;
-    font-size: 15px;
+    font-size: 22px;
 }
-.razzbar hr{
+.razzbar30 hr{
     border: 1px solid white;
 }
-.productos-razzbar{
+.productos-razzbar30{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
     font-family: 'Geomanist';
 }
-.product-razzbar{
+.product-razzbar30{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -95,26 +96,90 @@
     backdrop-filter: blur(5px);
     border-radius: 10px;
     color: white;
-    padding: 15px;
+    padding: 20px;
     box-sizing: border-box;
-    width: 250px;
+    width: 340px;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.product-razzbar:hover{
+.product-razzbar30:hover{
     transform: translateY(-10px);
     border-radius: 10px;
     box-shadow: 2px 4px 6px rgb(169, 169, 169);
 }
-.product-razzbar img{
+.product-razzbar30 img{
     width: 100%;
     border-radius: 10px;
+    margin-bottom: 10%;
     height: auto;
 }
-.product-razzbar p, .product-razzbar span{
+.product-razzbar30 p, .product-razzbar30 span{
+    margin: 5px 0;
+    font-size: 20px;
+}
+.product-razzbar30 p, .product-razzbar30 span{
     margin: 5px 0;
 }
 /* Productos: Razzbar */
+/* ------------------------------------------------- */
+/* Productos: Razzbar 60k */
+.home-razzbar60{
+    height: 160vh;
+    padding: 40px;
+    margin-bottom: 10%;
+    overflow: hidden;
+    position: relative;
+}
+.razzbar60-titulo{
+    display: flex;
+    gap: 520px;
+    margin-bottom: 0.5%;
+    font-size: 22px;
+}
+.razzbar60 hr{
+    border: 1px solid white;
+}
+.productos-razzbar60{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    font-family: 'Geomanist';
+}
+.product-razzbar60{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(95, 95, 95, 0.215);
+    min-height: 340px;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 340px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-razzbar60:hover{
+    transform: translateY(-10px);
+    border-radius: 10px;
+    box-shadow: 2px 4px 6px rgb(169, 169, 169);
+}
+.product-razzbar60 img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    height: auto;
+}
+.product-razzbar60 p, .product-razzbar60 span{
+    font-size: 20px;
+    margin: 5px 0;
+}
+/* Productos: Razzbar 60k */
 /* Producto: Vopk */
 .home-vopk{
     height: 70vh;
@@ -124,9 +189,9 @@
 }
 .vopk-titulo{
     display: flex;
-    gap: 460px;
+    gap: 520px;
     margin-bottom: 0.5%;
-    font-size: 15px;
+    font-size: 22px;
     text-align: start !important;
 }
 .vopk hr{
@@ -134,9 +199,9 @@
 }
 .productos-vopk{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 150px;
+    padding: 10px;
     font-family: 'Geomanist';
 }
 .product-vopk{
@@ -150,7 +215,7 @@
     color: white;
     padding: 15px;
     box-sizing: border-box;
-    width: 250px;
+    width: 340px;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -162,16 +227,17 @@
 .product-vopk img{
     width: 100%;
     border-radius: 10px;
+    margin-bottom: 10%;
     height: auto;
 }
 .product-vopk p, .product-vopk span{
     margin: 5px 0;
-    font-size: 16px;
+    font-size: 20px;
 }
 /* Producto: Vopk */
 /* Producto: Waspe */
 .home-waspe{
-    height: 170vh;
+    height: 180vh;
     padding: 40px;
     margin-bottom: 10%;
     position: relative;
@@ -181,18 +247,18 @@
 }
 .waspe-titulo{
     display: flex;
-    gap: 450px;
+    gap: 520px;
     margin-bottom: 0.5%;
-    font-size: 15px;
+    font-size: 22px;
 }
 .waspe hr{
     border: 1px solid white;
 }
 .productos-waspe{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 10px;
     font-family: 'Geomanist';
 }
 .product-waspe{
@@ -204,9 +270,9 @@
     backdrop-filter: blur(5px);
     border-radius: 10px;
     color: white;
-    padding: 15px;
+    padding: 20px;
     box-sizing: border-box;
-    width: 250px;
+    width: 340px;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -218,34 +284,34 @@
 .product-waspe img{
     width: 100%;
     border-radius: 10px;
+    margin-bottom: 10%;
     height: auto;
 }
 .product-waspe p, .product-waspe span{
     margin: 5px 0;
+    font-size: 20px;
 }
 /* Producto: Waspe */
- .producto-agotado {
-  opacity: 0.6;
-  cursor: not-allowed;
-  position: relative;
+.producto-agotado {
+    opacity: 0.6;
+    cursor: not-allowed;
+    position: relative;
 }
-
 .badge-agotado {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(255, 0, 0, 0.9);
-  color: white;
-  padding: 8px 16px;
-  font-size: 18px;
-  font-weight: bold;
-  border-radius: 5px;
-  z-index: 10;
-  pointer-events: none;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 0, 0, 0.9);
+    color: white;
+    padding: 15px 50px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 5px;
+    z-index: 10;
+    pointer-events: none;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
-
 .producto-agotado img {
-  filter: grayscale(50%);
+    filter: grayscale(50%);
 }

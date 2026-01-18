@@ -90,7 +90,7 @@ header{
 .logo-nav{
     font-family: 'Phage';
     color: white;
-    font-size: 40px;
+    font-size: 60px;
     font-weight: bold;
     text-decoration: none;
     transition: transform 0.3s ease, color 0.3s ease;
@@ -127,11 +127,11 @@ header{
     position: relative;
 }
 .home-presentacion-h1{
-    font-size: 50px;
+    font-size: 60px;
     margin-bottom: 20px;
 }
 .home-presentacion span{
-    font-size: 30px;
+    font-size: 50px;
     font-family: 'Phage';
     margin-bottom: 5%;
 }
@@ -141,10 +141,13 @@ header{
     display: flex;
     gap: 10px;
 }
+.deslizar h2{
+    font-size: 40px;
+}
 .deslizar img{
     object-fit: contain;
     background-repeat: no-repeat;
-    width: 50px;
+    width: 60px;
     filter: invert(100%);
     animation: abajo-anim 1.6s infinite;
 }
@@ -216,9 +219,6 @@ header{
 /* Productos Agotados */
 /* ------------------------------------------------- */
 /* Ventana: Raíz */
-.ventana-fondo img{
-    
-}
 .cerrar-ventana{
     position: absolute;
     top: 0;
@@ -238,7 +238,6 @@ header{
 /* ------------------------------------------------- */
 /* Ventana: Contacto */
 .elegir-contacto{
-
     border: none;
     z-index: 1;
     padding: 15px 200px;

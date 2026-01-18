@@ -1,5 +1,58 @@
+@media (max-width: 1600px){
+    .home-bang{
+        height: 210vh;
+    }
+    .bang-titulo{
+        gap: 410px;
+        font-size: 18px;
+    }
+    .product-bang{
+        width: 330px;
+    }
+    .home-razzbar30{
+        height: 270vh;
+    }
+    .razzbar30-titulo{
+        gap: 400px;
+        font-size: 18px;
+    }
+    .product-razzbar30{
+        width: 330px;
+    }
+    .home-razzbar60{
+        height: 270vh;
+    }
+    .razzbar60-titulo{
+        gap: 400px;
+        font-size: 18px;
+    }
+    .vopk-titulo{
+        gap: 410px;
+        font-size: 18px;
+    }
+    .product-razzbar60{
+        width: 330px;
+    }
+    .home-vopk{
+        height: 90vh;
+    }
+    .productos-vopk{
+        grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+        gap: 30px;
+    }
+    .product-vopk{
+        width: 320px;
+    }
+    .home-waspe{
+        height: 220vh;
+    }
+    .waspe-titulo{
+        gap: 400px;
+        font-size: 18px;
+    }
 
-@media (max-width: 430px) {
+}
+@media (max-width: 480px) {
 
     /* ---------- RAÍZ ---------- */
     body, html {
@@ -27,6 +80,7 @@
     .logo-nav {
         font-family: 'Phage';
         display: block;
+        font-size: 32px;
     }
 
     .deslizar img {
@@ -43,18 +97,26 @@
         padding: 20px;
         text-align: center;
     }
-
     .home-presentacion span {
         margin-bottom: 30%;
+        font-size: 30px;
     }
-
     .home-presentacion-h1 {
         top: 34%;
         text-align: center;
+        font-size: 40px;
     }
-
+    .deslizar{
+        height: 100px;
+        overflow: hidden;
+        display: flex;
+        gap: 5px;
+    }
+    .deslizar h2{
+        font-size: 28px;
+    }
     /* ---------- SECCIONES DE MARCAS ---------- */
-    .home-bang, .home-razzbar, .home-waspe, .home-vopk {
+    .home-bang, .home-razzbar30, .home-razzbar60, .home-waspe, .home-vopk {
         height: 200%;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(1fr));
@@ -67,60 +129,63 @@
         overflow-y: hidden;
     }
 
-    .home-waspe, .home-razzbar {
+    .home-waspe, .home-razzbar30, .home-razzbar60 {
         position: relative;
     }
 
     /* ---------- PRODUCTOS ---------- */
-    .productos-bang, .productos-razzbar, .productos-waspe, .productos-vopk {
+    .productos-bang, .productos-razzbar30, .productos-razzbar60, .productos-waspe, .productos-vopk{
         justify-items: center;
     }
-
-    .bang-titulo, .razzbar-titulo, .waspe-titulo, .vopk-titulo {
+    .product-bang, .product-razzbar30, .product-razzbar60, .product-waspe, .product-vopk{
+        width: 280px;
+    }
+    .productos-vopk{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+    .bang-titulo, .razzbar30-titulo, .razzbar60-titulo, .waspe-titulo, .vopk-titulo {
         gap: 1px;
         text-align: center;
     }
     /* ventana */
-    .ventana .cerrar-ventana, .ventana-1 .cerrar-ventana, .ventana-2 .cerrar-ventana, .ventana-3 .cerrar-ventana{
-        padding: 10px 20px !important;
-        left: 85%;
+    .cerrar-ventana{
+        padding: 5px 30px !important;
+        left: 80% !important;
     }
-    .ventana, .ventana-1, .ventana-2, .ventana-3 * {
-        padding: 0 !important;
-        margin: 0 !important;
-        box-sizing: border-box !important;
+    .ventana-fondo{
+        width: 95% !important;
+        height: 600px !important;
+        padding: 10px !important;
     }
-    .ventana-fondo * {
-        display: flex !important;
-        flex-direction: column !important;
-        flex-wrap: wrap !important;
-        gap: 0;
+    .descripcion-bang, .descripcion-razzbar30, .descripcion-razzbar60, .descripcion-vopk, .descripcion-waspe{
+        display: flex;
+        flex-direction: column;
+        gap: 30px !important;
         text-align: center;
     }
-    .bang-img img, .razzbar-img img, .vopk-img img, .waspe-img img{
-        z-index: 1;
-        width: 200px !important;
+    .bang-img img, .razzbar30-img img, .razzbar60-img img, .vopk-img img, .waspe-img img{
+        width: 250px !important;
         border-radius: 5px;
     }
-    .descripcion-bang, .descripcion-razzbar, .descripcion-vopk, .descripcion-waspe{
-        padding: 1px !important;
-        z-index: 1;
-        display: flex!important;
-        flex-direction: column!important;
-        justify-content: center!important;
-        align-items: center!important;
-        width: 100% !important;
-        gap: 10px !important;
-    }
-    .desc-bang, .desc-razzbar, .desc-vopk, .desc-waspe{
-        font-size: 12px;
+    .desc-bang, .desc-razzbar30, .desc-razzbar60, .desc-vopk, .desc-waspe{
+        font-size: 15px !important;
         display: flex;
         flex-direction: column;
         gap: 30px !important;
     }
+    .desc-bang, .desc-razzbar30, .desc-razzbar60, .desc-vopk, .desc-waspe h2{
+        font-size: 20px !important;
+    }
+    .desc-bang p, .desc-razzbar30 p, .desc-razzbar60 p, .desc-vopk p, .desc-waspe p{
+        font-size: 12px !important;
+    }
+    .desc-bang h2, .desc-vopk h2, .desc-waspe h2{
+        font-size: 18px !important;
+    }
     .elegir-contacto{
         padding: 5px 30px !important; 
-        background-color: white !important;
     }
     .agotado {
         position: absolute;
@@ -135,7 +200,6 @@
         background-color: rgba(0, 0, 0, 0.6);
         z-index: 10000;
     }
-
     .agotado p {
         font-size: 30px;
         z-index: 10001;
@@ -275,7 +339,7 @@
         width: 200px !important;
         border-radius: 5px;
     }
-    .descripcion-bang, .descripcion-razzbar, .descripcion-vopk, .descripcion-waspe{
+    .descripcion-bang, .descripcion-razzbar30, .descripcion-razzbar60, .descripcion-vopk, .descripcion-waspe{
         padding: 1px !important;
         z-index: 1;
         display: flex!important;

@@ -16,14 +16,14 @@ document.addEventListener("DOMContentLoaded", () => {
                     descClase: 'desc-bang',
                     promo: '⚠️SPAM EN IG -2€ DE DESCUENTO⚠️'
                 },
-                razzbar: { 
-                    contenedor: '.productos-razzbar', 
-                    clase: 'product-razzbar', 
+                razzbar30: { 
+                    contenedor: '.productos-razzbar30', 
+                    clase: 'product-razzbar30', 
                     data: 'ventana',
                     ventanaClase: 'ventana-1',
-                    descripcionClase: 'descripcion-razzbar',
-                    imgClase: 'razzbar-img',
-                    descClase: 'desc-razzbar',
+                    descripcionClase: 'descripcion-razzbar30',
+                    imgClase: 'razzbar30-img',
+                    descClase: 'desc-razzbar30',
                     promo: '⚠️SPAM EN IG -1€ DE DESCUENTO⚠️'
                 },
                 vopk: { 
@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // --- VENTANAS DE PRODUCTO (CON DELEGACIÓN DE EVENTOS) ---
     document.addEventListener("click", (e) => {
-        const btn = e.target.closest(".product-bang, .product-razzbar, .product-vopk, .product-waspe");
+        const btn = e.target.closest(".product-bang, .product-razzbar30, .product-vopk, .product-waspe");
         if (!btn) return;
 
         let num, ventanaSelector;
@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
             ventanaSelector = `.ventana[data-ventana="${num}"]`;
             console.log("clicked (BANG) num:", num);
         } 
-        else if (btn.classList.contains("product-razzbar")) {
+        else if (btn.classList.contains("product-razzbar30")) {
             num = btn.dataset.ventana;
             ventanaSelector = `.ventana-1[data-ventana="${num}"]`;
             console.log("clicked (RAZZ) num:", num);
