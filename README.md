@@ -51,8 +51,9 @@ Versión 6.0: Mejor estructura de la web (antes, en "Languages", tenia más html
 Versión 6.1: Agotado en algunos productos "Razzbar"   
 Versión 6.2: Agotado en algunos productos "Razzbar", "Waspe" y agregados en algunos productos "Bang" 
 
-Versión 7.0: Nueva sección: "Razzbar 60k". Y mejor  responsive para móviles  
-Versión 7.0.1: Corregir codigo   
+Versión 7.0: Nueva sección: "Razzbar 60k". Y mejor  responsive para móviles 
+Versión 7.0.1: Corregir codigo 
 Versión 7.0.2: Corregir codigo (1) 
+Versión 7.1: Agotado en algunos productos "Razzbar 30K" 
 
 Gracias por utilizar mi web!!  
