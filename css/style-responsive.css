@@ -175,14 +175,17 @@
         flex-direction: column;
         gap: 30px !important;
     }
-    .desc-bang, .desc-razzbar30, .desc-razzbar60, .desc-vopk, .desc-waspe h2{
+    .desc-bang, .desc-razzbar30, .desc-razzbar60, .desc-vopk, .desc-waspe{
         font-size: 20px !important;
     }
     .desc-bang p, .desc-razzbar30 p, .desc-razzbar60 p, .desc-vopk p, .desc-waspe p{
         font-size: 12px !important;
     }
-    .desc-bang h2, .desc-vopk h2, .desc-waspe h2{
-        font-size: 18px !important;
+    .desc-bang h2, .desc-razzbar30 h2, .desc-razzbar60 h2{
+        font-size: 25px !important;
+    }
+    .desc-vopk h2, .desc-waspe h2{
+        font-size: 19px !important  ;
     }
     .elegir-contacto{
         padding: 5px 30px !important; 
