@@ -1,54 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VapersMadrid</title>
-<script>
-    function alertaInfinita() {
-        alert("Web en Mantenimiento...");
-        setTimeout(alertaInfinita, 3000);
-    }
-    alertaInfinita();
-</script>
-<style>
-    body, html {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        background-color: black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: sans-serif;
-    }
-    .loader {
-        width: 80px;
-        height: 80px;
-        border: 10px solid rgba(255, 255, 255, 0.2); /* borde gris claro */
-        border-top: 10px solid white; /* borde superior blanco */
-        border-radius: 50%;
-        animation: girar 1s linear infinite; /* animación infinita */
-    }
-    @keyframes girar {
-        0% { 
-            transform: rotate(0deg); 
-        }
-        100% { 
-            transform: rotate(360deg); 
-        }
-    }
-</style>
-</head>
-<body>
-<div class="loader"></div>
-</body>
-</html>
-
-
-<!-- <!DOCTYPE html>
-<html lang="es">
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VapersMadrid</title>
@@ -57,7 +9,7 @@
     <link rel="stylesheet" href="css/style-productos.css">
     <link rel="stylesheet" href="css/style-responsive.css">
     <link rel="stylesheet" href="css/style-ventana.css">
-    <script src="js/wait.js" defer></script>
+    <script src="js/script.js" defer></script>
     <script type="module">
         // Firebase modular
         import { initializeApp } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-app.js";
@@ -126,6 +78,7 @@
             <div class="productos-bang">
                 
             </div>
+            <!-- Ventanas descriptivas -->
            
                 
         </section>
@@ -141,7 +94,7 @@
             <div class="productos-razzbar30">
                
             </div>
-            Ventanas descriptivas 1
+            <!-- Ventanas descriptivas 1 -->
             
         </section>
         <section class="home-razzbar60">
@@ -156,6 +109,7 @@
             <div class="productos-razzbar60">
                
             </div>
+            <!-- Ventanas descriptivas 1 -->
         </section>
         <section class="home-vopk">
             <div class="vopk">
@@ -169,6 +123,7 @@
             <div class="productos-vopk">
                     
             </div>
+            <!-- Ventanas descriptivas 2 -->
             
         </section>
         <section class="home-waspe">
@@ -183,9 +138,10 @@
             <div class="productos-waspe">
                     
             </div>
-
+            <!-- Ventanas descriptivas 3 -->
             
         </section>
+        <!-- Qué contacto -->
         <div class="contacto-elegir">
             <button class="cerrar-ventana-con">〤</button>
             <h2>Cuál plataforma prefieres contactar?</h2>
@@ -218,5 +174,5 @@
     </footer>
 </body>
 
-</html> -->
+</html>
 
