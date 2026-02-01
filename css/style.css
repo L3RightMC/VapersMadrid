@@ -109,6 +109,7 @@ header{
 }
 /* Navegación */
 /* ------------------------------------------------- */
+/* Pantalla de carga */
 .carga-fondo{
     position: fixed;
     top: 0;
@@ -129,10 +130,10 @@ header{
     transform: translate(-50%, -50%);
     width: 80px;
     height: 80px;
-    border: 10px solid rgba(255, 255, 255, 0.2); /* borde gris claro */
-    border-top: 10px solid white; /* borde superior blanco */
+    border: 10px solid rgba(255, 255, 255, 0.2);
+    border-top: 10px solid white;
     border-radius: 50%;
-    animation: girar 1s linear infinite; /* animación infinita */
+    animation: girar 1s linear infinite;
 }
 .carga-fondo.oculto {
     opacity: 0;
@@ -142,6 +143,8 @@ body.cargando {
   overflow: hidden;
   height: 100vh;
 }
+/* Pantalla de carga */
+/* ------------------------------------------------- */
 /* Fondo del html */
 .video-fondo{
     position: fixed;

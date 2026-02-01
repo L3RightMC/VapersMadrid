@@ -295,7 +295,7 @@ document.addEventListener("DOMContentLoaded", () => {
     cargaFondo.classList.add('oculto');
 
     document.body.classList.remove('cargando');
-  }, 4000);
+  }, 2000);
 
 
 });
