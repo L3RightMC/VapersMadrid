@@ -287,4 +287,15 @@ document.addEventListener("DOMContentLoaded", () => {
       document.body.style.overflow = "";
     }
   });
+
+  document.body.classList.add('cargando');
+
+  setTimeout(() => {
+    const cargaFondo = document.querySelector('.carga-fondo');
+    cargaFondo.classList.add('oculto');
+
+    document.body.classList.remove('cargando');
+  }, 4000);
+
+
 });
