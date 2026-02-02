@@ -293,8 +293,13 @@ document.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     const cargaFondo = document.querySelector('.carga-fondo');
     cargaFondo.classList.add('oculto');
-
+  
     document.body.classList.remove('cargando');
+  
+    
+    setTimeout(() => {
+      cargaFondo.remove();
+    }, 500);
   }, 2000);
 
 

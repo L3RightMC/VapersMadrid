@@ -56,6 +56,5 @@ Versión 7.0.1: Corregir codigo
 Versión 7.0.2: Corregir codigo (1)   
 Versión 7.1: Agotado en algunos productos "Razzbar 30K"   
 Versión 7.1.1: Mejor adaptacion en pantallas móviles   
-Versión 7.2: Mejor optimización en general, mejor adaptacion en pantallas móviles y cambiado algunos precios   
 
 Gracias por utilizar mi web!!  
