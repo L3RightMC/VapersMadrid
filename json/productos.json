@@ -78,7 +78,7 @@
             "imagen": "img/razzbar/razzbar1.webp",
             "nombre": "Razzbar Blackberry Ice",
             "descripcion": "Vaper individual sabor mora. de 30.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
-            "cantidad": 1,
+            "cantidad": 0,
             "precio": 12,
             "id": 1
         },
@@ -166,7 +166,7 @@
             "imagen": "img/razzbar/razzbar13.webp",
             "nombre": "Juicy Peach Ice",
             "descripcion": "Vaper individual sabor melocotón. de 30.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
-            "cantidad": 1,
+            "cantidad": 0,
             "precio": 12,
             "id": 12
         },
@@ -200,7 +200,7 @@
             "imagen": "img/razzbar60k/razzbar-60k-1.webp",
             "nombre": "Razzbar Coco Loco",
             "descripcion": "Vaper individual sabor coco. de 60.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
-            "cantidad": 1,
+            "cantidad": 0,
             "precio": 15,
             "id": 1
         },
@@ -216,7 +216,7 @@
             "imagen": "img/razzbar60k/razzbar-60k-3.webp",
             "nombre": "Razzbar Juicy Peach Ice",
             "descripcion": "Vaper individual sabor melocotón. de 60.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
-            "cantidad": 1,
+            "cantidad": 0,
             "precio": 15,
             "id": 3
         },
@@ -240,7 +240,7 @@
             "imagen": "img/razzbar60k/razzbar-60k-6.webp",
             "nombre": "Razzbar Love 66",
             "descripcion": "Vaper individual sabor a pintauñas (no sé que sabor es). de 60.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
-            "cantidad": 1,
+            "cantidad": 0,
             "precio": 15,
             "id": 6
         },
@@ -256,7 +256,7 @@
             "imagen": "img/razzbar60k/razzbar-60k-8.webp",
             "nombre": "Razzbar Summer Dream",
             "descripcion": "Vaper individual sabor uva. de 60.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
-            "cantidad": 1,
+            "cantidad": 0,
             "precio": 15,
             "id": 8
         },
@@ -272,7 +272,7 @@
             "imagen": "img/razzbar60k/razzbar-60k-10.webp",
             "nombre": "Razzbar Gummy Bear",
             "descripcion": "Vaper individual sabor ≈ piña colada. de 60.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
-            "cantidad": 1,
+            "cantidad": 0,
             "precio": 15,
             "id": 10
         },
@@ -288,7 +288,7 @@
             "imagen": "img/razzbar60k/razzbar-60k-12.webp",
             "nombre": "Razzbar Strawberry Banana",
             "descripcion": "Vaper individual sabor fresa y plátano. de 60.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
-            "cantidad": 1,
+            "cantidad": 0,
             "precio": 15,
             "id": 12
         },
@@ -296,7 +296,7 @@
             "imagen": "img/razzbar60k/razzbar-60k-13.webp",
             "nombre": "Razzbar Lemon Lime",
             "descripcion": "Vaper individual sabor lima limón. de 60.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
-            "cantidad": 1,
+            "cantidad": 0,
             "precio": 15,
             "id": 13
         }
@@ -393,7 +393,7 @@
             "id": 7
         },
         {
-            "imagen": "img/waspe/waspe8.webp",
+            "imagen": "img/waspe/waspe11.webp",
             "nombre": "Waspe Strawberry Red bull / Strawberry Watermelon Bubblegum / Red Bull Ice / Cherry Cola Ice",
             "descripcion": "Vaper cuádruple sabor red bull de fresa / chicle de fresa y sandía / red bull helado / cola de cereza helado de 100.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
             "cantidad": 1,
