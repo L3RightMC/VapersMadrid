@@ -116,8 +116,7 @@
         font-size: 28px;
     }
     /* ---------- SECCIONES DE MARCAS ---------- */
-    .home-bang, .home-razzbar30, .home-razzbar60, .home-waspe, .home-vopk {
-        height: 200%;
+    .home-bang, .home-razzbar30, .home-razzbar60, .home-waspe{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(1fr));
         gap: 15px;
@@ -127,27 +126,39 @@
         padding: 0 10px;
         box-sizing: border-box;
         overflow-y: hidden;
+        min-height: 600dvh;
     }
-
     .home-waspe, .home-razzbar30, .home-razzbar60 {
         position: relative;
     }
-
     /* ---------- PRODUCTOS ---------- */
-    .productos-bang, .productos-razzbar30, .productos-razzbar60, .productos-waspe, .productos-vopk{
+    .productos-bang, .productos-razzbar30, .productos-razzbar60, .productos-waspe{
         justify-items: center;
+        min-height: 500dvh;
+    }
+    .home-razzbar30, .home-razzbar60{
+        height: unset !important;
+        min-height: unset !important;
+        overflow: hidden !important;
     }
     .product-bang, .product-razzbar30, .product-razzbar60, .product-waspe, .product-vopk{
         width: 280px;
     }
+    .home-vopk{
+        padding: 5px !important;
+        width: 100%;
+    }
     .productos-vopk{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
+         grid-template-columns: repeat(1, 1fr) !important;
+        gap: 30px !important;
+        height: auto !important;
     }
     .bang-titulo, .razzbar30-titulo, .razzbar60-titulo, .waspe-titulo, .vopk-titulo {
-        gap: 1px;
-        text-align: center;
+        gap: 1px !important;
+        text-align: center !important;
+    }
+    .product-waspe{
+        min-height: 60dvh !important;
     }
     /* ventana */
     .cerrar-ventana{
@@ -395,5 +406,33 @@
     }
     .problema{
         width: 100%;
+    }
+}
+@media (max-width: 1180px){
+    .home-bang{
+        height: 230vh;
+    }
+    .home-razzbar30{
+        height: 280vh;
+    }
+    .home-razzbar60{
+        height: 280vh;
+    }
+    .home-vopk{
+        height: 160vh;
+    }
+    .productos-vopk{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        height: 150vh;
+    }
+    .home-waspe{
+        height: 250vh;
+    }
+    .bang-titulo, .razzbar30-titulo, .razzbar60-titulo, .vopk-titulo, .waspe-titulo{
+        text-align: center;
+        align-items: center;
+        gap: 300px;
     }
 }

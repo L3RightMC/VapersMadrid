@@ -118,7 +118,7 @@
             "imagen": "img/razzbar/razzbar6.webp",
             "nombre": "Razzbar Mixed Berries",
             "descripcion": "Vaper individual sabor bayas mixtas. de 30.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
-            "cantidad": 1,
+            "cantidad": 0,
             "precio": 12,
             "id": 6
         },
@@ -208,7 +208,7 @@
             "imagen": "img/razzbar60k/razzbar-60k-2.webp",
             "nombre": "Razzbar Strawberry Vainilla Coke",
             "descripcion": "Vaper individual sabor fresa, vainilla y cola. de 60.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
-            "cantidad": 1,
+            "cantidad": 0,
             "precio": 15,
             "id": 2
         },
@@ -224,7 +224,7 @@
             "imagen": "img/razzbar60k/razzbar-60k-4.webp",
             "nombre": "Razzbar Lemon Peach Passion Fruit",
             "descripcion": "Vaper individual sabor limón, melocotón y maracuyá. de 60.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
-            "cantidad": 1,
+            "cantidad": 0,
             "precio": 15,
             "id": 4
         },
@@ -232,7 +232,7 @@
             "imagen": "img/razzbar60k/razzbar-60k-5.webp",
             "nombre": "Razzbar Strawberry Tropical Fruit",
             "descripcion": "Vaper individual sabor tropical, sandía y chicle. de 60.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
-            "cantidad": 1,
+            "cantidad": 0,
             "precio": 15,
             "id": 5
         },
@@ -248,7 +248,7 @@
             "imagen": "img/razzbar60k/razzbar-60k-7.webp",
             "nombre": "Razzbar Black Dragon Fruit Strawberry",
             "descripcion": "Vaper individual sabor frutas de dragón con fresa. de 60.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
-            "cantidad": 1,
+            "cantidad": 0,
             "precio": 15,
             "id": 7
         },
@@ -280,7 +280,7 @@
             "imagen": "img/razzbar60k/razzbar-60k-11.webp",
             "nombre": "Razzbar Strawberry Cottom Candy",
             "descripcion": "Vaper individual sabor algodón de azúcar. de 60.000 caladas. ⚠️Evita el contacto de cualquier liquido y cualquiera caida, se puede dañar⚠️",
-            "cantidad": 1,
+            "cantidad": 0,
             "precio": 15,
             "id": 11
         },

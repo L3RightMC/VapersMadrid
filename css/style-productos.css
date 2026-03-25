@@ -1,6 +1,8 @@
 /* Productos: Bang */
 .home-bang{
-    height: 120vh;
+    height: unset !important;
+    min-height: unset !important;
+    overflow: visible !important;
     padding: 40px;
     margin-bottom: 10%;
     overflow-y: hidden;
@@ -62,10 +64,9 @@
 /* ------------------------------------------------- */
 /* Productos: Razzbar */
 .home-razzbar30{
-    height: 160vh;
+    min-height: unset;
     padding: 40px;
     margin-bottom: 10%;
-    overflow: hidden;
     position: relative;
 }
 .razzbar30-titulo{
@@ -182,10 +183,11 @@
 /* Productos: Razzbar 60k */
 /* Producto: Vopk */
 .home-vopk{
-    height: 70vh;
+    height: unset !important;
+    min-height: unset !important;
+    overflow: visible !important;
     padding: 40px;
     margin-bottom: 10%;
-    overflow: hidden;
 }
 .vopk-titulo{
     display: flex;
@@ -237,7 +239,9 @@
 /* Producto: Vopk */
 /* Producto: Waspe */
 .home-waspe{
-    height: 180vh;
+    height: unset !important;
+    min-height: unset !important;
+    overflow: visible !important;
     padding: 40px;
     margin-bottom: 10%;
     position: relative;
