@@ -57,5 +57,6 @@ Versión 7.0.2: Corregir codigo (1)
 Versión 7.1: Agotado en algunos productos "Razzbar 30K"   
 Versión 7.1.1: Mejor adaptacion en pantallas móviles   
 Versión 7.2: Agotado en algunos productos de la web    
+Versión 7.3: Mejor adaptación para pantallas móviles y tablets. También agotado en algunos productos "Razzbar 30" y "Razzbar 60"    
 
 Gracias por utilizar mi web!!  
